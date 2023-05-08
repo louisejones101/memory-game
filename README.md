@@ -9,9 +9,8 @@ This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of
 
 <br>
 
-<kbd><img src="assets/images/colourpalette.png"  width="800"></kbd>
+<kbd><img src=""  width="800"></kbd>
 
-<br>
 <br>
 
 # Contents
@@ -94,7 +93,7 @@ The color scheme chosen were greens blues and vibrant coral.  The inspiration fo
 
 Below is a screenshot of the colours used.
 
-<>.......
+<kbd><img src="assets/images/colourpalette.png"  width="800"></kbd>
 
 <br>
 
