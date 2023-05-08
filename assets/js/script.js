@@ -37,21 +37,28 @@ const birdCards = [
 birdCards.sort(()=> 0.5 - Math.random());  //randomly sort the images in the array
 
 const gridDisplay = document.querySelector('#game-grid');
+const cardsPicked = [];  //empty array waiting for the matched cards when picked
 
+// function to create the Board using the cards in the array birdCards
 function createBoard () {
     for (let i = 0; i < birdCards.length; i++){  //for loop to iterate through the array
         const card = document.createElement('img')
         card.setAttribute('src', 'assets/images/cardBack.png');
         card.setAttribute('data-id', i);
-        card.addEventListener('click', flipCard);
+        card.addEventListener('click', flipCard); //on click function flip card
         gridDisplay.append(card);
     }  
 }
 
 createBoard () //call createBoard function
 
-function flipCard() {
-    const cardId = this.getAttribute('data-id');
+
+// flip card function
+function flipCard() {  
+    const cardId = this.getAttribute('data-id'); //fetches the data-id for each card
+    cardsPicked.push(birdCards[cardId].name); //pushes the cards that have been picked to a new array cardsPicked
     console.log(birdCards[cardId].name);
     console.log('clicked', cardId);
+    console.log(cardsPicked);
+    this.setAttribute('src', birdCards[cardId].img);
 }
