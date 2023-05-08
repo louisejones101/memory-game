@@ -2,49 +2,51 @@
 const cardArray = [  
 {
     name: 'bird1', 
-    img: 'images/bird1.png',
+    imgSrc: 'assets/images/bird1.png',
 },
 {
     name: 'bird2', 
-    img: 'images/bird2.png',
+    img: 'assets/images/bird2.png',
 },
 {
     name: 'bird3', 
-    img: 'images/bird3.png',
+    img: 'assets/images/bird3.png',
 },
 {
     name: 'bird4', 
-    img: 'images/bird4.png',
+    img: 'assets/images/bird4.png',
 },
 {
     name: 'bird5', 
-    img: 'images/bird5.png',
+    img: 'assets/images/bird5.png',
 },
 {
     name: 'bird6', 
-    img: 'images/bird6.png',
+    img: 'assets/images/bird6.png',
 },
 {
     name: 'bird7', 
-    img: 'images/bird7.png',
+    img: 'assets/images/bird7.png',
 },
 {
     name: 'bird8', 
-    img: 'images/bird8.png',
+    img: 'assets/images/bird8.png',
 },
-]
+];
 
 cardArray.sort(()=> 0.5 - Math.random());  //randomly sort the images in the array
 
-const gridDisplay = document.queryselector('.game-grid');
+const gridDisplay = document.querySelector('#game-grid');
 
 function createBoard () {
-    for (let i = 0; i < cardArray.length; i++){
-        const card = document.createElement('img');
-        card.setAttribute('src', 'images/cardBack.png');
+    for (let i = 0; i < cardArray.length; i++){  //for loop to iterate through the array
+        const card = document.createElement('img')
+        card.setAttribute('src', 'assets/images/cardBack.png');
         card.setAttribute('data-id', i);
-        gridDisplay.appendChild('card');
+        gridDisplay.append(card);
+       console.log(card, i);
     }
+    
 }
 
-createBoard ();
+createBoard () //call createBoard function
