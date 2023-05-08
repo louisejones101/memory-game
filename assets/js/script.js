@@ -34,4 +34,17 @@ const cardArray = [
 },
 ]
 
-cardArray.sort(()=> 0.5 - Math.random());
+cardArray.sort(()=> 0.5 - Math.random());  //randomly sort the images in the array
+
+const gridDisplay = document.queryselector('.game-grid');
+
+function createBoard () {
+    for (let i = 0; i < cardArray.length; i++){
+        const card = document.createElement('img');
+        card.setAttribute('src', 'images/cardBack.png');
+        card.setAttribute('data-id', i);
+        gridDisplay.appendChild('card');
+    }
+}
+
+createBoard ();
