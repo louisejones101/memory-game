@@ -1,6 +1,10 @@
 body {
-    margin: 0;
-    
+    margin: 0; 
+    cursor: pointer;
+}
+
+img {
+    padding: 1%;
 }
 
 .bg-image {
@@ -11,9 +15,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
+    
 }
-
-
 
 .title {
     padding: 10%;
@@ -25,12 +28,7 @@ body {
     background-color: #ff834e;
     margin: auto;
     max-width: 450px;
-}
-
-img {
-
-    padding: 1%;
-
+    cursor: pointer;
 }
 
 .footer {
