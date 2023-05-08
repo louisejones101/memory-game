@@ -1,4 +1,4 @@
-# Quiz
+# Tropical Birds Pairs Memory Game
 <br>
 This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of the Level 5 Web Applications Development with Code Insitute The project aim was to Design, develop and implement a dynamic Front end web application using HTML, CSS and JavaScript.
 
@@ -9,7 +9,7 @@ This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of
 
 <br>
 
-<kbd><img src=""  width="800"></kbd>
+<kbd><img src="assets/images/colourpalette.png"  width="800"></kbd>
 
 <br>
 <br>
@@ -90,11 +90,15 @@ Once all of the cards have been found the user will get a pop up congratulating 
 
 ### Colour Scheme
 
-The color scheme chosen was .......
+The color scheme chosen were greens blues and vibrant coral.  The inspiration for the colour palette was taken from the background tropical image that I chose to use.  The colours chosen are bright and colourful.  
+
+Below is a screenshot of the colours used.
+
+<>.......
 
 <br>
 
-<kbd><img src=""  width="800"></kbd>
+<kbd><i""  width="800"></kbd>
 
 <br>
 
