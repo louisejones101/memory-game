@@ -5,24 +5,34 @@ body {
 
 .bg-image {
     background-image: url("../images/CardGameBackgroundweb.jpg"); 
-    max-width: 100%;
+    max-width: 1900px;
     max-height: 100%;
-    background-position: center;
+    background-position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
 }
 
-.tiles {
-    margin: 48px auto;
+
+
+.title {
+    padding: 0;
+}
+
+.game-grid {
+    padding: 2%;
+    background-color: #ff834e;
+    margin: auto;
+    width: 50%;
     width: max-content;
     display: grid;
     grid-template-columns: repeat(4, 100px);
     gap: 16px;
     box-sizing: border-box;
+    
 }
 
-.tile {
+.cards {
     height: 100px;
     background: #111111;
     border: 5px solid #444444;
