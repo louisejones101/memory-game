@@ -2,7 +2,7 @@
 const birdCards = [  
 {
     name: 'bird1', 
-    imgSrc: 'assets/images/bird1.png',
+    img: 'assets/images/bird1.png',
 },
 {
     name: 'bird2', 
