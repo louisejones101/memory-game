@@ -1,10 +1,17 @@
+* {
+    max-width: 1200px;
+    margin:auto;
+}
+
 body {
     margin: 0; 
     cursor: pointer;
+    
 }
 
 img {
     padding: 1%;
+    width:100px;
 }
 
 .bg-image {
