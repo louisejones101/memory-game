@@ -61,7 +61,8 @@ function flipCard() {
     const cardId = this.getAttribute('data-id'); //fetches the data-id for each card
     cardsPicked.push(birdCards[cardId].name); //pushes the cards that have been picked to a new array cardsPicked
     this.setAttribute('src', birdCards[cardId].img);
-    if(cardsPicked.length === 2);  
+    if(cardsPicked.length == 2){  
         setTimeout(checkMatch, 500); //set a slight delay when two cards clicked before checking for match
+    }
 }
 
