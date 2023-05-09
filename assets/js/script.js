@@ -2,7 +2,7 @@
 const birdCards = [  
 {
     name: 'bird1', 
-    img: 'assets/images/bird1.png',
+    img: 'assets/images/bird1b.png',
 },
 {
     name: 'bird2', 
@@ -52,13 +52,16 @@ function createBoard () {
 
 createBoard () //call createBoard function
 
+function checkMatch() {
+    console.log('checking for match');
+}
 
 // flip card function
 function flipCard() {  
     const cardId = this.getAttribute('data-id'); //fetches the data-id for each card
     cardsPicked.push(birdCards[cardId].name); //pushes the cards that have been picked to a new array cardsPicked
-    console.log(birdCards[cardId].name);
-    console.log('clicked', cardId);
-    console.log(cardsPicked);
     this.setAttribute('src', birdCards[cardId].img);
+    if(cardsPicked.length === 2);  
+        setTimeout(checkMatch, 500); //set a slight delay when two cards clicked before checking for match
 }
+
