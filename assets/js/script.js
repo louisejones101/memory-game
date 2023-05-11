@@ -90,13 +90,17 @@ createBoard () //call createBoard function
 //function to check if there is a match
 function checkMatch() {
     const cards = document.querySelectorAll('img');  //search every image
-    if (cardsPickedId[0] === cardsPickedId[1]){
+    if (cardsPickedId == cardsPickedId){  //if the same card is clicked twice
+        alert('You have clicked the same image, pick another one')
+
+    }
+    if (cardsPicked[0] == cardsPicked[1]){
         alert('You have found a match!');
         cards[cardsPickedId[0].removeEventListener('click', flipCard)]; // stop listening for click on this card
         cards[cardsPickedId[1].removeEventListener('click', flipCard)];
         cardsMatched.push(cardsPicked);  //pushes matched cards to the array cardsmatched
     } 
-    cardsPicked = [];  //if cards not a match
+    cardsPicked = []; 
     cardsPickedId = [];
 
 }
