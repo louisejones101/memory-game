@@ -69,8 +69,9 @@ const birdCards = [
 birdCards.sort(()=> 0.5 - Math.random());  //randomly sort the images in the array
 
 const gridDisplay = document.querySelector('#game-grid');
-const cardsPicked = [];  //empty array waiting for the matched cards when picked
-const cardsPickedId = []; //empty array waiting for the ids of the matched cards
+let cardsPicked = [];  //empty array waiting for the matched cards when picked
+let cardsPickedId = []; //empty array waiting for the ids of the matched cards
+const cardsMatched = [];  //
 
 // function to create the Board using the cards in the array birdCards
 function createBoard () {
@@ -89,11 +90,14 @@ createBoard () //call createBoard function
 //function to check if there is a match
 function checkMatch() {
     const cards = document.querySelectorAll('img');  //search every image
-    if (cardsPicked[0] === cardsPicked[1]){
+    if (cardsPickedId[0] === cardsPickedId[1]){
         alert('You have found a match!');
-     } else {
-        console.log('oh dear no match');
-     }
+        cards[cardsPickedId[0].removeEventListener('click', flipCard)]; // stop listening for click on this card
+        cards[cardsPickedId[1].removeEventListener('click', flipCard)];
+        cardsMatched.push(cardsPicked);  //pushes matched cards to the array cardsmatched
+    } 
+    cardsPicked = [];  //if cards not a match
+    cardsPickedId = [];
 
 }
 
