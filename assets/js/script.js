@@ -1,4 +1,4 @@
-// The array that is going to hold the car images
+// The array that is going to hold the card images
 const birdCards = [  
 {
     name: 'bird1', 
@@ -70,13 +70,15 @@ birdCards.sort(()=> 0.5 - Math.random());  //randomly sort the images in the arr
 
 const gridDisplay = document.querySelector('#game-grid');
 const cardsPicked = [];  //empty array waiting for the matched cards when picked
+const cardsPickedId = []; //empty array waiting for the ids of the matched cards
 
 // function to create the Board using the cards in the array birdCards
 function createBoard () {
     for (let i = 0; i < birdCards.length; i++){  //for loop to iterate through the array
         const card = document.createElement('img')
-        card.setAttribute('src', 'assets/images/cardBack.png');
-        card.setAttribute('data-id', i);
+        console.log(card, i);
+        card.setAttribute('src', 'assets/images/cardBack.png'); 
+        card.setAttribute('data-id', i); 
         card.addEventListener('click', flipCard); //on click function flip card
         gridDisplay.append(card);
     }  
@@ -86,7 +88,8 @@ createBoard () //call createBoard function
 
 //function to check if there is a match
 function checkMatch() {
-   if (cardsPicked[0] === cardsPicked[1]){
+    const cards = document.querySelectorAll('img');  //search every image
+    if (cardsPicked[0] === cardsPicked[1]){
         alert('You have found a match!');
      } else {
         console.log('oh dear no match');
@@ -97,8 +100,11 @@ function checkMatch() {
 // flip card function
 function flipCard() {  
     const cardId = this.getAttribute('data-id'); //fetches the data-id for each card
-    cardsPicked.push(birdCards[cardId].name); //pushes the cards that have been picked to a new array cardsPicked
-    this.setAttribute('src', birdCards[cardId].img);
+    cardsPicked.push(birdCards[cardId].name); //pushes the cards that have been picked to the array cardsPicked
+    cardsPickedId.push(cardId);  //pushes the id of the cards picked to the array cardsPickedId
+    console.log(cardsPicked);
+    console.log(cardsPickedId);
+    this.setAttribute('src', birdCards[cardId].img); //get card image linked to the card Id
     if(cardsPicked.length === 2){  
         setTimeout(checkMatch, 500); //set a slight delay when two cards clicked before calling checkMatch function
     }
