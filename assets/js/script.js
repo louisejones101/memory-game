@@ -90,18 +90,25 @@ createBoard () //call createBoard function
 //function to check if there is a match
 function checkMatch() {
     const cards = document.querySelectorAll('img');  //search every image
-    if (cardsPickedId == cardsPickedId){  //if the same card is clicked twice
-        alert('You have clicked the same image, pick another one')
-
-    }
+    const optionOneId = cardsPickedId[0];
+    const optionTwoId = cardsPickedId[1];
+   // if (optionOneId == optionTwoId){  //if the same card is clicked twice    remove and replace with a lock card function
+       // alert('You have clicked the same image, pick another one');
+         
+    //} 
     if (cardsPicked[0] == cardsPicked[1]){
         alert('You have found a match!');
-        cards[cardsPickedId[0].removeEventListener('click', flipCard)]; // stop listening for click on this card
-        cards[cardsPickedId[1].removeEventListener('click', flipCard)];
+        cards[optionOneId].removeEventListener('click', flipCard); // stop listening for click on this card
+        cards[optionTwoId].removeEventListener('click', flipCard);
         cardsMatched.push(cardsPicked);  //pushes matched cards to the array cardsmatched
-    } 
+    } else {
+        cards[optionOneId].setAttribute('src', 'assets/images/cardBack.png');  //if cards not a match change them back
+        cards[optionTwoId].setAttribute('src', 'assets/images/cardBack.png');
+    }
     cardsPicked = []; 
     cardsPickedId = [];
+    if (cardsMatched.length === birdCards.length/2);  //if the number of cards matched in the array are the same as the number of cards in the Bird Cards Array/2
+    console.log("You've won!");
 
 }
 
@@ -116,5 +123,12 @@ function flipCard() {
     if(cardsPicked.length === 2){  
         setTimeout(checkMatch, 500); //set a slight delay when two cards clicked before calling checkMatch function
     }
+}
+
+/*function flippedCard() { // disable card once flipped
+ 
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    resetBoard();
 }
 
