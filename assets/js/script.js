@@ -1,5 +1,11 @@
-// The array that is going to hold the card images
-const birdCards = [  
+const gameGrid = document.querySelector('section');  // linking to section in HTMl
+const movesCounter = document.querySelector('span'); // linking to section in HTML
+const counter = 0;  //setting the moves counter to O.
+
+
+// card Data
+
+const birdCards = [   // The array that is going to hold the card images
 {
     name: 'bird1', 
     img: 'assets/images/bird1b.png',
@@ -65,4 +71,6 @@ const birdCards = [
     img: 'assets/images/bird8.png',
 },
 ];
+
+
 
