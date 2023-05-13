@@ -29,7 +29,7 @@ img {
     text-align: right;
 }
 
-#game-grid {
+.gameGrid {
     padding: 2%;
     background-color: #ff834e;
     margin: auto;
