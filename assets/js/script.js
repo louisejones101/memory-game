@@ -2,7 +2,7 @@ const gameGrid = document.querySelector('section');  // linking to section in HT
 const movesCounter = document.querySelector('span'); // linking to section in HTML
 const counter = 0;  //setting the moves counter to O.
 
-
+moveCounter.textContent = counter;
 // card Data
 
 const birdCards = [   // The array that is going to hold the card images
