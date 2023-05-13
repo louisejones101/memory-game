@@ -43,6 +43,21 @@ img {
     width: 100px;
 }
 
+.card {
+    height:100%;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.cardFace .cardBack {
+    padding-top: 1rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 
 
 
