@@ -2,10 +2,10 @@ const gameGrid = document.querySelector('section');  // linking to section in HT
 const movesCounter = document.querySelector('span'); // linking to section in HTML
 const counter = 0;  //setting the moves counter to O.
 
-moveCounter.textContent = counter;
-// card Data
+movesCounter.textContent = counter; 
 
-const birdCards = [   // The array that is going to hold the card images
+// card Data
+const cardData = () => [   // The array that is going to hold the card images
 {
     name: 'bird1', 
     img: 'assets/images/bird1b.png',
@@ -71,6 +71,14 @@ const birdCards = [   // The array that is going to hold the card images
     img: 'assets/images/bird8.png',
 },
 ];
+
+// Function to randomly sort the cards
+const randomiseCards = () => {
+    const gameCards = cardData ();  //fetch card data from the array
+    gameCards.sort(() => Math.random () -0.5);  // randomise
+    console.log(gameCards);
+
+}
 
 
 
