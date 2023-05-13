@@ -81,3 +81,29 @@ const randomiseCards = () => {
 
 randomiseCards();
 
+//Generate cards in the grid
+const generateCards = () => {   // 
+    const cardData = randomiseCards();  // call randomiseCard function
+    const cards = document.querySelectorAll('card');  // use all the cards 
+    cardData.forEach(item => { 
+        const card = document.createElement('div');  // create a card on the grid
+        const cardFace = document.createElement('img');  // create an element for the card front
+        const cardBack = document.createElement('img'); // create an element for the card back
+    });
+        
+};
+
+generateCards();  //call card function
+
+
+
+    
+        
+        
+        
+     
+
+
+
+
+
