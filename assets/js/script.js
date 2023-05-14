@@ -82,27 +82,34 @@ const randomiseCards = () => {
 randomiseCards();
 
 //Generate cards in the grid
-const generateCards = () => {   // 
+const generateCards = () => {  
     const cardData = randomiseCards();  // call randomiseCard function
     const cards = document.querySelectorAll('card');  // use all the cards 
     cardData.forEach(item => { 
         const card = document.createElement('div');  
-        const cardFace = document.createElement('img');  
+        const cardFace = document.createElement('img');
         const cardBack = document.createElement('div'); 
         card.classList = 'card'; 
         cardFace.classList = 'cardFace';
         cardBack.classList = 'cardBack';
-
         //link the card info for the front and back to the cards
-        cardFace.src = item.imgSrc;  
-        cardBack.src = ('assets/images/cardBack.png'); 
-
+        cardBack.src = cardBack;
+        cardFace.src = item.imgSrc;
+        
+       
+        
+        
         // attach the card to the game grid and attach the card front and back images to the card
         gameGrid.appendChild(card);  
         card.appendChild(cardFace);
         card.appendChild(cardBack);
 
-    });         
+        /*card.addEventListener('click', (e) => {
+            card.classList.toggle("toggleCard");
+            cardFace.classList.toggle("toggleCard");
+        }); */ 
+    });
+             
 };
 
 generateCards();  //call the function to generate the cards in the grid
