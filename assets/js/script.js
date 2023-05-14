@@ -1,8 +1,6 @@
 const gameGrid = document.querySelector('section');  // linking to section in HTMl
-const movesCounter = document.querySelector('span'); // linking to section in HTML
-const counter = 0;  //setting the moves counter to O
-
-movesCounter.textContent = counter; 
+const movesElem = document.querySelector('.moves'); // linking to section in HTML
+let counter = 0;  //setting the moves counter to O
 
 // card Data
 const gameCards = () => [   // The array that is going to hold the card images
@@ -124,8 +122,10 @@ const checkMatch = (e) => {
                 card.classList.remove('cardPicked');
                 setTimeout(() => card.classList.remove('toggleCard'), 1200);  
             });
-        }
-    }
+        };
+        counter++;
+        movesElem.innerHTML = counter;
+    };
 };
 
 generateCards();  //call the function to generate the cards in the grid
