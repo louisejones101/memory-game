@@ -92,7 +92,6 @@ const generateCards = () => {
         cardFace.classList = 'cardFace';
         cardBack.classList = 'cardBack';
         //link the card info for the front and back to the cards
-        
         cardFace.src = item.imgSrc;
         //cardBack.src = cardBack;
         card.setAttribute('name', item.name);
@@ -115,10 +114,16 @@ const checkMatch = (e) => {
     const cardsPicked = document.querySelectorAll('.cardPicked');  //cards that are clicked (cardPicked) added to cardsPicked
     // if statement to check if the card names of the picked cards match
     if (cardsPicked.length === 2){   
-        if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){
-            console.log('matched');
+        if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){  // if the cards match remove the from the cardPicked class and make them unclickable
+            cardsPicked.forEach((card) => {  
+                card.classList.remove('cardPicked');
+                card.style.pointerEvents = 'none';
+            });
         } else {
-            console.log('wrong');
+            cardsPicked.forEach((card) => {  //if the card names dont match then remove them from the cardPicked class and after a delay turn the cards back over
+                card.classList.remove('cardPicked');
+                setTimeout(() => card.classList.remove('toggleCard'), 1200);  
+            });
         }
     }
 };
