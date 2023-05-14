@@ -1,4 +1,4 @@
-const gameGrid = document.querySelector('section');  // linking to section in HTMl
+const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
 const movesElem = document.querySelector('.moves'); // linking to section in HTML
 let counter = 0;  //setting the moves counter to O
 
@@ -123,7 +123,7 @@ const checkMatch = (e) => {
                 setTimeout(() => card.classList.remove('toggleCard'), 1200);  
             });
         };
-        counter++;
+        counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
         movesElem.innerHTML = counter;
     };
 };

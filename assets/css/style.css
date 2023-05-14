@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
 * {
     max-width: 1200px;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -22,6 +24,22 @@ body {
 .title {
     padding: 10%;
     text-align: right;
+    font-family: merienda;
+    font-size: 110% ;
+    color: #2502bf; 
+}
+
+h2 {
+    font-family: merienda;
+    font-size: 2rem ;
+    text-align: right;
+}
+
+/* Moves Counter */
+.moves {
+    font-family: merienda;
+    font-size: 80% ;
+    
 }
 
 /* Container holding the game grid */
@@ -47,6 +65,7 @@ body {
     height: 100px;
     width: 100px;
     position: absolute;  
+    pointer-events: none;
 
 }
 
@@ -66,8 +85,10 @@ body {
     
 }
 .toggleCard {
-    transform: rotateY(180deg);  /* flip the card over onto its front*/
+    transform: rotateY(180deg);  /* flip the card over onto its front */
 }
+
+
 
 
 
