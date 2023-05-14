@@ -110,13 +110,11 @@ const generateCards = () => {
 
 // function to check if the cards picked match
 const checkMatch = (e) => {
-    const cardClicked = e.target;
-    cardClicked.classList.add('cardPicked');
-    const cardsPicked = document.querySelectorAll('.cardPicked');
-    
-    
-
-    if (cardsPicked.length === 2){
+    const cardClicked = e.target;  
+    cardClicked.classList.add('cardPicked'); //creates a cardPicked class
+    const cardsPicked = document.querySelectorAll('.cardPicked');  //cards that are clicked (cardPicked) added to cardsPicked
+    // if statement to check if the card names of the picked cards match
+    if (cardsPicked.length === 2){   
         if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){
             console.log('matched');
         } else {
