@@ -95,19 +95,14 @@ const generateCards = () => {
         //link the card info for the front and back to the cards
         cardBack.src = cardBack;
         cardFace.src = item.imgSrc;
-        
-       
-        
-        
         // attach the card to the game grid and attach the card front and back images to the card
         gameGrid.appendChild(card);  
         card.appendChild(cardFace);
         card.appendChild(cardBack);
-
-        /*card.addEventListener('click', (e) => {
-            card.classList.toggle("toggleCard");
-            cardFace.classList.toggle("toggleCard");
-        }); */ 
+        // event listener
+        card.addEventListener('click', (e) => {
+        card.classList.toggle("toggleCard");
+        })
     });
              
 };
