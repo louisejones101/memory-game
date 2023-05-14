@@ -1,6 +1,6 @@
 const gameGrid = document.querySelector('section');  // linking to section in HTMl
 const movesCounter = document.querySelector('span'); // linking to section in HTML
-const counter = 0;  //setting the moves counter to O.
+const counter = 0;  //setting the moves counter to O
 
 movesCounter.textContent = counter; 
 
@@ -84,8 +84,7 @@ randomiseCards();
 //Generate cards in the grid
 const generateCards = () => {  
     const cardData = randomiseCards();  // call randomiseCard function
-    const cards = document.querySelectorAll('card');  // use all the cards 
-    cardData.forEach(item => { 
+    cardData.forEach((item) => { 
         const card = document.createElement('div');  
         const cardFace = document.createElement('img');
         const cardBack = document.createElement('div'); 
@@ -93,8 +92,10 @@ const generateCards = () => {
         cardFace.classList = 'cardFace';
         cardBack.classList = 'cardBack';
         //link the card info for the front and back to the cards
-        cardBack.src = cardBack;
+        
         cardFace.src = item.imgSrc;
+        //cardBack.src = cardBack;
+        card.setAttribute('name', item.name);
         // attach the card to the game grid and attach the card front and back images to the card
         gameGrid.appendChild(card);  
         card.appendChild(cardFace);
@@ -102,12 +103,31 @@ const generateCards = () => {
         // event listener
         card.addEventListener('click', (e) => {
         card.classList.toggle("toggleCard");
-        })
-    });
-             
+        checkMatch(e);  // call checkmatch function
+        });
+    });        
+};
+
+// function to check if the cards picked match
+const checkMatch = (e) => {
+    const cardClicked = e.target;
+    cardClicked.classList.add('cardPicked');
+    const cardsPicked = document.querySelectorAll('.cardPicked');
+    
+    
+
+    if (cardsPicked.length === 2){
+        if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){
+            console.log('matched');
+        } else {
+            console.log('wrong');
+        }
+    }
 };
 
 generateCards();  //call the function to generate the cards in the grid
+
+
 
 
 
