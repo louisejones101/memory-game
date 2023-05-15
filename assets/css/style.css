@@ -87,8 +87,36 @@ h2 {
     transform: rotateY(180deg);  /* flip the card over onto its front */
 }
 
-.noClick {
-    pointer-events: none;
+/*.gameButtons {
+
+}
+
+/* modals */
+
+.rulesModal {
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    min-height: 300px;
+    padding: 1.5rem;
+    position: absolute;
+}
+
+.modalHidden {
+    display:none;
+}
+
+
+
+
+/*rulesflex
+
+.modalButton {
+
+}
+
+overlayHidden {
+
 }
 
 
