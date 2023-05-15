@@ -25,9 +25,29 @@
         <section class = "gameGrid"></section>
     </div>
     <br>
-    <div>
-        <button class="rulesButton">Rules</button>
-        <button class="resetGame">Reset</button>
+    <section class = 'buttons' >
+        <button class = "rulesButton">Rules</button>
+        <button class = "resetGame">Reset</button>
+    </section>
+    <div class = 'rulesModal'>
+        <div class = 'modal-hidden'>
+            <div>
+                <h3>Rules of the Game</h3>
+                <p>The aim of the game is to turn the cards over to find the matching pairs using the minimum amount of moves.</p>
+                <p>You are only allowed to chose two cards at a time</p>
+                <p>Click on your first card choice and it will flip over revealing an image</p>
+                <p>Then click on your second the card choice and it will flip over revealing an image</p>
+                <p>If the two card images match they will remain turn over and you can click on your next two cards</p>
+                <p>If the two cards don't match then the cards will flip back over to be hidden again</p>
+                <p>Try to remember the images of those cards and carry on looking for their pairs</p>
+                <p>The game is won when you have found all 8 pairs of cards</p>
+                <br>
+                <p>Good Luck!</p>
+            </div>
+            <div class = 'flex'>
+                <button class = 'rulesButtonClose'>Start Game</button>
+            </div>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
