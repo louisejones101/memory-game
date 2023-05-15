@@ -26,7 +26,7 @@ body {
     text-align: right;
     font-family: merienda;
     font-size: 110% ;
-    color: #3659a9; 
+    color: #072771; 
 }
 
 h2 {
@@ -50,6 +50,11 @@ h2 {
     width:30rem;
     margin: auto;
     justify-content: center; /* center the grid inside the container*/
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #070707;
+    border-width: 1px;
+
 }
 
 .gameGrid {
@@ -82,7 +87,7 @@ h2 {
     transform-style: preserve-3d;  
     transition: all 1s ease;  /* control the speed and type of transition */
     transform: rotateY(0deg); /* to start the card with the back facing up */
-    
+    box-shadow: 0 5px 5px 0 #17171786, -5px 5px 5px 0 #17171739;
 }
 .toggleCard {
     transform: rotateY(180deg);  /* flip the card over onto its front */
@@ -96,10 +101,9 @@ h2 {
 
 .modal {
     display: none;
-    width: 800px;
+    width: 80%;
     min-height: 300px;
     overflow: auto; /* Enable scroll if needed */
-    padding: 1.5rem;
     position: absolute;
     z-index: 1;
     background-color: rgb(0,0,0); /* Fallback color */
@@ -112,12 +116,53 @@ h2 {
 
 .modalContent {
     background-color: #ff8b5a; 
-    margin: 10% auto;
     padding: 10%;
     border: 1px solid #888;
-    width: 80%; 
+    font-family: merienda;   
 }
 
+.modalContent h3 {
+    font-size: 2.5rem;
+    text-align: center;   
+}
+
+.modalContent ul {
+    font-size: 1.2rem;  
+}
+
+.modalContent p {
+    font-size: 2.5rem;
+    text-align: center;  
+}
+
+.rulesButton {
+    text-align: center;
+}
+
+
+.gameButtons {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.rulesBtn, .resetGame, #startBtn{
+    background-color: #16438a;  
+    color:#ff834e;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #070707;
+    border-width: 1px;
+    font-size: 1.5rem;
+    padding: 1% 5% 1% 5%; 
+    margin: 0.1rem;
+    font-family: merienda;
+    box-shadow: 0 5px 5px 0 #17171786, -5px 5px 5px 0 #17171739;
+}
+
+.rulesBtn:hover, .resetGame:hover {
+    background-color: #1e60ca;
+}
 
 
 
