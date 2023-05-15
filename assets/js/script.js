@@ -1,8 +1,9 @@
 const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
 const movesElem = document.querySelector('.moves'); // linking to section in HTML
-const rulesModal = document.querySelector('.rulesModal');
-const rulesButton = document.querySelector('.rulesButtton');
-const modalButtonClose = document.querySelector('.modalButtonClose');
+let modal = document.getElementById('rulesModal');
+const rulesBtn = document.getElementById('rulesBtn');
+const closeBtn = document.getElementById('startBtn');
+
 let counter = 0;  //setting the moves counter to O
 
 //card data
@@ -73,6 +74,23 @@ const gameCards = () => [   // The array that is going to hold the card images
 },
 ];
 
+//modal function 
+
+
+/*rulesBtn.addEventListener('click', (event) => {
+    console.log('clicked');
+//function openRulesBtn (event) { 
+        rulesBtn = event.target.button;
+        document.getElementById("rulesBtn");
+        modal.style.display = 'block';
+});*/
+
+//rulesBtn.addEventListener('click', rulesBtn);
+
+rulesBtn.onclick = function() {
+    modal.style.display = 'block';
+    console.log('clicked');
+}
 
 // Function to randomly sort the cards
 const randomiseCards = () => {
@@ -137,11 +155,9 @@ function movesCounter() {
     movesElem.innerHTML = counter;
 }
 
-const openRules = function() {
-    rulesModal.classList.remove('modalHidden');
-};
 
-rulesButton.addEventListener('click', rulesModal);
+
+
 
 
 
