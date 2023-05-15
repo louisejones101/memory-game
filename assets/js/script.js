@@ -76,16 +76,7 @@ const gameCards = () => [   // The array that is going to hold the card images
 
 //modal function 
 
-
-/*rulesBtn.addEventListener('click', (event) => {
-    console.log('clicked');
-//function openRulesBtn (event) { 
-        rulesBtn = event.target.button;
-        document.getElementById("rulesBtn");
-        modal.style.display = 'block';
-});*/
-
-//rulesBtn.addEventListener('click', rulesBtn);
+rulesBtn.addEventListener('click', rulesBtn);
 
 rulesBtn.onclick = function() {
     modal.style.display = 'block';
