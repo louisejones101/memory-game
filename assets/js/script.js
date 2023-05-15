@@ -1,9 +1,10 @@
+
+
 const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
 const movesElem = document.querySelector('.moves'); // linking to section in HTML
 let counter = 0;  //setting the moves counter to O
 
-// card Data
-const gameCards = () => [   // The array that is going to hold the card images
+const gameCards = () = [   // The array that is going to hold the card images
 {
     name: 'bird1', 
     imgSrc: 'assets/images/bird1b.png',
@@ -70,6 +71,8 @@ const gameCards = () => [   // The array that is going to hold the card images
 },
 ];
 
+
+
 // Function to randomly sort the cards
 const randomiseCards = () => {
     const cardData = gameCards();  //fetch card data from the array
@@ -99,8 +102,9 @@ const generateCards = () => {
         card.appendChild(cardBack);
         // event listener
         card.addEventListener('click', (e) => {
-        card.classList.toggle("toggleCard");
+        card.classList.toggle("toggleCard"); 
         checkMatch(e);  // call checkmatch function
+
         });
     });        
 };
@@ -111,8 +115,8 @@ const checkMatch = (e) => {
     cardClicked.classList.add('cardPicked'); //creates a cardPicked class
     const cardsPicked = document.querySelectorAll('.cardPicked');  //cards that are clicked (cardPicked) added to cardsPicked
     // if statement to check if the card names of the picked cards match
-    if (cardsPicked.length === 2){   
-        if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){  // if the cards match remove the from the cardPicked class and make them unclickable
+    if (cardsPicked.length === 2){ 
+         if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){  // if the cards match remove the from the cardPicked class and make them unclickable
             cardsPicked.forEach((card) => {  
                 card.classList.remove('cardPicked');
                 card.style.pointerEvents = 'none';
