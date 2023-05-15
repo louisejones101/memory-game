@@ -25,12 +25,12 @@
         <section class = "gameGrid"></section>
     </div>
     <br>
-    <section class = 'buttons' >
-        <button class = "rulesButton">Rules</button>
+    <div class = "gameButtons" >
+        <button class = "rulesButton" id ="btn-open">Rules</button>
         <button class = "resetGame">Reset</button>
-    </section>
-    <div class = 'rulesModal'>
-        <div class = 'modal-hidden'>
+    </div>
+    <div class = "rulesModal">
+        <div class = "modalHidden">
             <div>
                 <h3>Rules of the Game</h3>
                 <p>The aim of the game is to turn the cards over to find the matching pairs using the minimum amount of moves.</p>
@@ -44,8 +44,9 @@
                 <br>
                 <p>Good Luck!</p>
             </div>
-            <div class = 'flex'>
-                <button class = 'rulesButtonClose'>Start Game</button>
+            <div class = "overlayHidden"></div>
+            <div class = "flex">
+                <button class = 'modalButtonClose' id = "btn-close">Start Game</button>
             </div>
         </div>
     </div>

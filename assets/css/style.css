@@ -100,10 +100,20 @@ h2 {
     min-height: 300px;
     padding: 1.5rem;
     position: absolute;
+    z-index: 2;
 }
 
 .modalHidden {
-    display:none;
+    display: none;
+}
+
+/*#btn-open {
+    
+}*/
+
+#btn-close {
+    transform: translate(10px, -20px);
+    
 }
 
 

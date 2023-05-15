@@ -1,5 +1,8 @@
 const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
 const movesElem = document.querySelector('.moves'); // linking to section in HTML
+const rulesModal = document.querySelector('.rulesModal');
+const rulesButton = document.querySelector('.rulesButtton');
+const modalButtonClose = document.querySelector('.modalButtonClose');
 let counter = 0;  //setting the moves counter to O
 
 //card data
@@ -70,6 +73,7 @@ const gameCards = () => [   // The array that is going to hold the card images
 },
 ];
 
+
 // Function to randomly sort the cards
 const randomiseCards = () => {
     const cardData = gameCards();  //fetch card data from the array
@@ -132,6 +136,15 @@ function movesCounter() {
     counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
     movesElem.innerHTML = counter;
 }
+
+const openRules = function() {
+    rulesModal.classList.remove('modalHidden');
+};
+
+rulesButton.addEventListener('click', rulesModal);
+
+
+
 
 
 
