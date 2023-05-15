@@ -1,10 +1,9 @@
-
-
 const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
 const movesElem = document.querySelector('.moves'); // linking to section in HTML
 let counter = 0;  //setting the moves counter to O
 
-const gameCards = () = [   // The array that is going to hold the card images
+//card data
+const gameCards = () => [   // The array that is going to hold the card images
 {
     name: 'bird1', 
     imgSrc: 'assets/images/bird1b.png',
@@ -71,8 +70,6 @@ const gameCards = () = [   // The array that is going to hold the card images
 },
 ];
 
-
-
 // Function to randomly sort the cards
 const randomiseCards = () => {
     const cardData = gameCards();  //fetch card data from the array
@@ -83,33 +80,31 @@ const randomiseCards = () => {
 randomiseCards();
 
 //Generate cards in the grid
-const generateCards = () => {  
-    const cardData = randomiseCards();  // call randomiseCard function
-    cardData.forEach((item) => { 
-        const card = document.createElement('div');  
+const generateCards = () => {
+    const cardData = randomiseCards(); // call randomiseCard function
+    cardData.forEach((item) => {
+        const card = document.createElement('div');
         const cardFace = document.createElement('img');
-        const cardBack = document.createElement('div'); 
-        card.classList = 'card'; 
+        const cardBack = document.createElement('div');
+        card.classList = 'card';
         cardFace.classList = 'cardFace';
         cardBack.classList = 'cardBack';
         //link the card info for the front and back to the cards
         cardFace.src = item.imgSrc;
-        //cardBack.src = cardBack;
-        card.setAttribute('name', item.name);
-        // attach the card to the game grid and attach the card front and back images to the card
+        card.setAttribute('name', item.name); 
+        //attach cards to grid
         gameGrid.appendChild(card);  
         card.appendChild(cardFace);
         card.appendChild(cardBack);
-        // event listener
+        // add eventlistener which calls the checkmatch function
         card.addEventListener('click', (e) => {
-        card.classList.toggle("toggleCard"); 
-        checkMatch(e);  // call checkmatch function
+            card.classList.toggle("toggleCard");
+            checkMatch(e); // call checkmatch function
+        }); 
+    });
+}
 
-        });
-    });        
-};
-
-// function to check if the cards picked match
+// check if the cards picked match
 const checkMatch = (e) => {
     const cardClicked = e.target;  
     cardClicked.classList.add('cardPicked'); //creates a cardPicked class
@@ -127,14 +122,16 @@ const checkMatch = (e) => {
                 setTimeout(() => card.classList.remove('toggleCard'), 1200);  
             });
         };
-        counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
-        movesElem.innerHTML = counter;
+        movesCounter();
     };
 };
 
 generateCards();  //call the function to generate the cards in the grid
 
-
+function movesCounter() {
+    counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
+    movesElem.innerHTML = counter;
+}
 
 
 
