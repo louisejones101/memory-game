@@ -80,7 +80,12 @@ rulesBtn.addEventListener('click', rulesBtn);
 
 rulesBtn.onclick = function() {
     modal.style.display = 'block';
-    console.log('clicked');
+}
+
+closeBtn.addEventListener('click', startBtn);
+
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
 }
 
 // Function to randomly sort the cards
