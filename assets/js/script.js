@@ -1,6 +1,9 @@
-const gameGrid = document.querySelector('.gameGrid');  // linking to section in HTMl
-const movesElem = document.querySelector('.moves'); // linking to section in HTML
-let modal = document.getElementById('rulesModal');
+// code for the code within the main grid was taken from tutorial online by "developedbyed" and edited to suit - link in ReadME
+
+// declare variables and link them to the correct class and Id names in HTML
+const gameGrid = document.querySelector('.gameGrid');  
+const movesElem = document.querySelector('.moves'); 
+const modal = document.getElementById('rulesModal');  
 const rulesBtn = document.getElementById('rulesBtn');
 const closeBtn = document.getElementById('startBtn');
 
@@ -74,17 +77,15 @@ const gameCards = () => [   // The array that is going to hold the card images
 },
 ];
 
-//modal function 
+//modal functions
 
-rulesBtn.addEventListener('click', rulesBtn);
-
-rulesBtn.onclick = function() {
+rulesBtn.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
+rulesBtn.onclick = function() {   // function to open rules modal
     modal.style.display = 'block';
 }
 
-closeBtn.addEventListener('click', startBtn);
-
-closeBtn.onclick = function() {
+closeBtn.addEventListener('click', startBtn); // event listener for when the start game button is clicked
+closeBtn.onclick = function() {  // function to close rules modal
     modal.style.display = 'none';
 }
 
@@ -146,10 +147,20 @@ const checkMatch = (e) => {
 
 generateCards();  //call the function to generate the cards in the grid
 
-function movesCounter() {
+// function for the moves counter
+function movesCounter() {  
     counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
     movesElem.innerHTML = counter;
 }
+
+/*function resetGame () {
+
+}
+
+rulesBtn.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
+rulesBtn.onclick = function() {   // function to open rules modal
+    modal.style.display = 'block';
+}*/
 
 
 
