@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap');
 * {
     max-width: 1200px;
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
     
 }
@@ -25,7 +25,7 @@ body {
     text-align: right;
     font-family: merienda;
     font-size: 110% ;
-    color: #2502bf; 
+    color: #3659a9; 
 }
 
 h2 {
@@ -85,6 +85,10 @@ h2 {
 }
 .toggleCard {
     transform: rotateY(180deg);  /* flip the card over onto its front */
+}
+
+.noClick {
+    pointer-events: none;
 }
 
 
