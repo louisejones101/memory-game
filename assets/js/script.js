@@ -4,8 +4,9 @@
 const gameGrid = document.querySelector('.gameGrid');  
 const movesElem = document.querySelector('.moves'); 
 const modal = document.getElementById('rulesModal');  
-const rulesBtn = document.getElementById('rulesBtn');
-const closeBtn = document.getElementById('startBtn');
+const rulesButton = document.getElementById('rulesBtn');
+const closeButton = document.getElementById('startBtn');
+const resetButton = document.getElementById('resetGame');
 
 let counter = 0;  //setting the moves counter to O
 
@@ -79,13 +80,13 @@ const gameCards = () => [   // The array that is going to hold the card images
 
 //modal functions
 
-rulesBtn.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
-rulesBtn.onclick = function() {   // function to open rules modal
+rulesButton.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
+rulesButton.onclick = function() {   // function to open rules modal
     modal.style.display = 'block';
 }
 
-closeBtn.addEventListener('click', startBtn); // event listener for when the start game button is clicked
-closeBtn.onclick = function() {  // function to close rules modal
+closeButton.addEventListener('click', startBtn); // event listener for when the start game button is clicked
+closeButton.onclick = function() {  // function to close rules modal
     modal.style.display = 'none';
 }
 
@@ -153,14 +154,12 @@ function movesCounter() {
     movesElem.innerHTML = counter;
 }
 
-/*function resetGame () {
 
+resetButton.addEventListener('click', resetGame);  // event listener for when the rules button is clicked
+resetButton.onclick = function() {   // function to open rules modal
+    console.log('resetGame button working');
+    //resetGame();
 }
-
-rulesBtn.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
-rulesBtn.onclick = function() {   // function to open rules modal
-    modal.style.display = 'block';
-}*/
 
 
 
