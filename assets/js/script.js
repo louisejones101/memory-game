@@ -3,9 +3,11 @@
 // declare variables and link them to the correct class and Id names in HTML
 const gameGrid = document.querySelector('.gameGrid');  
 const movesElem = document.querySelector('.moves'); 
-const modal = document.getElementById('rulesModal');  
+var modalOne = document.getElementById('rulesModal');
+const modalTwo = document.getElementById('winModal')  
 const rulesButton = document.getElementById('rulesBtn');
 const closeButton = document.getElementById('startBtn');
+const playAgainButton = document.getElementById('playAgainBtn');
 const resetButton = document.getElementById('resetGameBtn');
 let cardsMatched = 0;
 let counter = 0;  //setting the moves counter to O
@@ -79,18 +81,28 @@ const gameCards = () => [   // The array that is going to hold the card images
 ];
 
 
-//modal button event listeners and functions
+//Rules modal button event listeners and functions
 
 rulesButton.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
 rulesButton.onclick = function() {   // function to open rules modal
-    modal.style.display = 'block';
+    modalOne.style.display = 'block';
 }
 
 closeButton.addEventListener('click', startBtn); // event listener for when the start game button is clicked
 closeButton.onclick = function() {  // function to close rules modal
-    modal.style.display = 'none';
+    modalOne.style.display = 'none';
 }
 
+//win Modal
+
+function winModalMessage () {  
+    modalTwo.style.display = 'block';
+}
+
+playAgainButton.addEventListener('click', playAgainBtn); // event listener for when the start game button is clicked
+playAgainButton.onclick = function() {  // function to close rules modal
+    modalTwo.style.display = 'none';
+}
 
 // reset Game event listener and reset button function to call reset game function
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
@@ -140,7 +152,6 @@ const generateCards = () => {
     });
 };
 
-
 // check if the cards picked match
 const checkMatch = (e) => {
     const cardClicked = e.target; 
@@ -153,7 +164,7 @@ const checkMatch = (e) => {
             cardsPicked.forEach((card) => {  
                 card.classList.remove('cardPicked');
                 card.style.pointerEvents = 'none';
-                cardsMatched++;
+                cardsMatched++;  //if 2 cards matched add to variable cards matched
             });
         } else {
             cardsPicked.forEach((card) => {  //if the card names dont match then remove them from the cardPicked class and after a delay turn the cards back over
@@ -163,9 +174,9 @@ const checkMatch = (e) => {
         };
         movesCounter();
     }
+    // if cards matched is equal to all the cards alert win
     if (cardsMatched === 16){
-        console.log('you win');
-        alert('you win!');
+        winModalMessage();
     };   
 };
 
