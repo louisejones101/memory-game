@@ -6,8 +6,8 @@ const movesElem = document.querySelector('.moves');
 const modal = document.getElementById('rulesModal');  
 const rulesButton = document.getElementById('rulesBtn');
 const closeButton = document.getElementById('startBtn');
-const resetButton = document.getElementById('resetGame');
-
+const resetButton = document.getElementById('resetGameBtn');
+let cardsMatched = 0;
 let counter = 0;  //setting the moves counter to O
 
 //card data
@@ -78,7 +78,8 @@ const gameCards = () => [   // The array that is going to hold the card images
 },
 ];
 
-//modal functions
+
+//modal button event listeners and functions
 
 rulesButton.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
 rulesButton.onclick = function() {   // function to open rules modal
@@ -90,6 +91,21 @@ closeButton.onclick = function() {  // function to close rules modal
     modal.style.display = 'none';
 }
 
+
+// reset Game event listener and reset button function to call reset game function
+resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
+resetButton.onclick = function() {   // function to reset game 
+    console.log('reset button clicked');
+}
+
+
+// function for the moves counter
+function movesCounter() {  
+    counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
+    movesElem.innerHTML = counter;
+}
+
+
 // Function to randomly sort the cards
 const randomiseCards = () => {
     const cardData = gameCards();  //fetch card data from the array
@@ -98,7 +114,7 @@ const randomiseCards = () => {
 };
 
 randomiseCards();
-
+    
 //Generate cards in the grid
 const generateCards = () => {
     const cardData = randomiseCards(); // call randomiseCard function
@@ -122,19 +138,22 @@ const generateCards = () => {
             checkMatch(e); // call checkmatch function
         }); 
     });
-}
+};
+
 
 // check if the cards picked match
 const checkMatch = (e) => {
-    const cardClicked = e.target;  
+    const cardClicked = e.target; 
     cardClicked.classList.add('cardPicked'); //creates a cardPicked class
     const cardsPicked = document.querySelectorAll('.cardPicked');  //cards that are clicked (cardPicked) added to cardsPicked
+    const toggleCard = document.querySelectorAll('toggleCard'); 
     // if statement to check if the card names of the picked cards match
     if (cardsPicked.length === 2){ 
          if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){  // if the cards match remove the from the cardPicked class and make them unclickable
             cardsPicked.forEach((card) => {  
                 card.classList.remove('cardPicked');
                 card.style.pointerEvents = 'none';
+                cardsMatched++;
             });
         } else {
             cardsPicked.forEach((card) => {  //if the card names dont match then remove them from the cardPicked class and after a delay turn the cards back over
@@ -143,39 +162,11 @@ const checkMatch = (e) => {
             });
         };
         movesCounter();
-    };
+    }
+    if (cardsMatched === 16){
+        console.log('you win');
+        alert('you win!');
+    };   
 };
 
 generateCards();  //call the function to generate the cards in the grid
-
-// function for the moves counter
-function movesCounter() {  
-    counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
-    movesElem.innerHTML = counter;
-}
-
-
-resetButton.addEventListener('click', resetGame);  // event listener for when the rules button is clicked
-resetButton.onclick = function() {   // function to open rules modal
-    console.log('resetGame button working');
-    //resetGame();
-}
-
-
-
-
-
-
-
-
-
-
-    
-        
-        
-     
-
-
-
-
-
