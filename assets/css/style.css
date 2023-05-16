@@ -2,7 +2,7 @@
 * {
     max-width: 1200px;
     margin: auto;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .title {
-    padding: 10%;
+    padding: 6%;
     text-align: right;
     font-family: merienda;
     font-size: 110% ;
@@ -73,6 +73,10 @@ h2 {
 
 }
 
+.cardFace {
+    transform: rotateY(-180deg);  /* to keep images facing the correct way when flipped without this the images are reversed when flipped*/
+}
+
 .cardBack {
     background-image: url("../images/cardBack.png"); 
     backface-visibility: hidden;
@@ -111,7 +115,7 @@ h2 {
 
 .modalContent {
     background-color: #ff8b5a; 
-    padding: 10%;
+    padding: 5%;
     border: 1px solid #888;
     font-family: merienda;   
 }
@@ -157,7 +161,7 @@ h2 {
     box-shadow: 0 5px 5px 0 #17171786, -5px 5px 5px 0 #17171739;
 }
 
-.rulesBtn:hover, .resetGame:hover {
+.rulesBtn:hover, .resetGame:hover, #ßstartBtn:hover {
     background-color: #1e60ca;
 }
 
