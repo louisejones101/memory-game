@@ -12,6 +12,7 @@ const resetButton = document.getElementById('resetGameBtn');
 let cardsMatched = 0;
 let counter = 0;  //setting the moves counter to O
 
+
 //card data
 const gameCards = () => [   // The array that is going to hold the card images
 {
@@ -97,26 +98,33 @@ closeButton.onclick = function() {  // function to close rules modal
 
 function winModalMessage () {  
     modalTwo.style.display = 'block';
+    resetGame();
 }
 
-playAgainButton.addEventListener('click', playAgainBtn); // event listener for when the start game button is clicked
+playAgainButton.addEventListener('click', playAgainButton); // event listener for when the start game button is clicked
 playAgainButton.onclick = function() {  // function to close rules modal
     modalTwo.style.display = 'none';
-    resetGame();
 }
 
 // reset Game event listener and reset button function to call reset game function
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
 resetButton.onclick = function() {   // function to reset game 
-    resetGame();
+resetGame();
 }
 
 
 // function for the moves counter
+
+
 function movesCounter() {  
     counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
     movesElem.innerHTML = counter;
 }
+
+function resetCounter(){
+    counter = 0;
+    movesElem.innerHTML = counter;
+};
 
 
 // Function to randomly sort the cards
@@ -130,7 +138,7 @@ randomiseCards();
     
 //Generate cards in the grid
 const generateCards = () => {
-    let cardData = randomiseCards(); // call randomiseCard function
+    const cardData = randomiseCards(); // call randomiseCard function
     cardData.forEach((item) => {
         const card = document.createElement('div');
         const cardFace = document.createElement('img');
@@ -145,7 +153,7 @@ const generateCards = () => {
         gameGrid.appendChild(card);  
         card.appendChild(cardFace);
         card.appendChild(cardBack);
-        // add eventlistener which calls the checkmatch function
+        //add eventlistener which calls the checkmatch function
         card.addEventListener('click', (e) => {
             card.classList.toggle("toggleCard");
             checkMatch(e); // call checkmatch function
@@ -182,18 +190,19 @@ const checkMatch = (e) => {
 };
 
 const resetGame = () => {
-    let cardData = randomiseCards();
-    let cardReset = document.querySelectorAll('.card');
-    let cardFaceReset = document.querySelectorAll('.cardFace');
+    let cardData = randomiseCards ();
+    let cardFace = document.querySelectorAll(".cardFace");
+    let cardReset = document.querySelectorAll(".card");
     cardData.forEach((item, index) => {
         cardReset[index].classList.remove('toggleCard');
-    setTimeout(() => {
-        cardReset[index].style.pointerEvents = 'all';
-        cardFaceReset.src = item.imgSrc;
-        console.log(item.imgSrc);
-        cardReset[index].setAttribute('name', item.name);
-    }, 1000);
-    });
+        setTimeout(() => {
+            cardReset[index].style.pointerEvents = 'all';
+            cardFace[index].src = item.imgSrc;
+            cardReset[index].setAttribute('name', item.name);
+        },1000); 
+        cardsPicked = 0;
+        cardsMatched = 0;
+        resetCounter();
+    });    
 };
-
 generateCards();  //call the function to generate the cards in the grid
