@@ -147,7 +147,7 @@ h2 {
     padding-bottom: 5%;
 }
 
-.rulesBtn, .resetGame, #startBtn{
+.closeBtn, .resetGame, .rulesBtn, #playAgainBtn {
     background-color: #16438a;  
     color:#ff834e;
     border-radius: 5px;

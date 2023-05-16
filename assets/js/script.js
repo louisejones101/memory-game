@@ -102,12 +102,13 @@ function winModalMessage () {
 playAgainButton.addEventListener('click', playAgainBtn); // event listener for when the start game button is clicked
 playAgainButton.onclick = function() {  // function to close rules modal
     modalTwo.style.display = 'none';
+    resetGame();
 }
 
 // reset Game event listener and reset button function to call reset game function
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
 resetButton.onclick = function() {   // function to reset game 
-    console.log('reset button clicked');
+    resetGame();
 }
 
 
@@ -129,7 +130,7 @@ randomiseCards();
     
 //Generate cards in the grid
 const generateCards = () => {
-    const cardData = randomiseCards(); // call randomiseCard function
+    let cardData = randomiseCards(); // call randomiseCard function
     cardData.forEach((item) => {
         const card = document.createElement('div');
         const cardFace = document.createElement('img');
@@ -169,7 +170,7 @@ const checkMatch = (e) => {
         } else {
             cardsPicked.forEach((card) => {  //if the card names dont match then remove them from the cardPicked class and after a delay turn the cards back over
                 card.classList.remove('cardPicked');
-                setTimeout(() => card.classList.remove('toggleCard'), 1200);  
+                setTimeout(() => card.classList.remove('toggleCard'), 1200); 
             });
         };
         movesCounter();
@@ -178,6 +179,21 @@ const checkMatch = (e) => {
     if (cardsMatched === 16){
         winModalMessage();
     };   
+};
+
+const resetGame = () => {
+    let cardData = randomiseCards();
+    let cardReset = document.querySelectorAll('.card');
+    let cardFaceReset = document.querySelectorAll('.cardFace');
+    cardData.forEach((item, index) => {
+        cardReset[index].classList.remove('toggleCard');
+    setTimeout(() => {
+        cardReset[index].style.pointerEvents = 'all';
+        cardFaceReset.src = item.imgSrc;
+        console.log(item.imgSrc);
+        cardReset[index].setAttribute('name', item.name);
+    }, 1000);
+    });
 };
 
 generateCards();  //call the function to generate the cards in the grid
