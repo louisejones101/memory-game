@@ -104,6 +104,7 @@ function winModalMessage () {   // winModal function
 playAgainButton.addEventListener('click', playAgainButton); // event listener for when the start game button is clicked
 playAgainButton.onclick = function() {  // function to close rules modal
     modalTwo.style.display = 'none';
+    resetCounter();
 }
 
 // reset Game event listener and reset button function to call reset game function
@@ -111,6 +112,7 @@ playAgainButton.onclick = function() {  // function to close rules modal
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
 resetButton.onclick = function() {   // function to reset game 
 resetGame(); // call the resetGame function
+resetCounter();
 }
 
 
@@ -137,7 +139,7 @@ const randomiseCards = () => {
 
 randomiseCards();
     
-//Generate cards in the grid - code taken from developedbyEd tutorial and changed to suit
+//Generate cards in the grid
 
 const generateCards = () => {
     const cardData = randomiseCards(); // call randomiseCard function
@@ -209,7 +211,6 @@ const resetGame = () => {
         // reset the counters
         cardsPicked = 0;    
         cardsMatched = 0;  
-        resetCounter();
     });    
 };
 generateCards();  //call the function to generate the cards in the grid
