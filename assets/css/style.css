@@ -42,7 +42,7 @@ h2 {
 
 /* Moves Counter */
 .moves {
-    font-family: merienda;
+    font-family: merienda, sans-serif;
     font-size: 80% ;
     
 }
@@ -127,7 +127,7 @@ h2 {
     background-color: #ff8b5a; 
     padding: 5%;
     border: 1px solid #888;
-    font-family: merienda;   
+    font-family: merienda, sans-serif;   
 }
 
 .modalContent h3 {
@@ -137,7 +137,7 @@ h2 {
 
 .modalContent ul {
     font-size: 1.2rem; 
-    font-family:Calibri, sans-serif;
+    font-family: Calibri, sans-serif;
 }
 
 .modalContent p {
@@ -170,7 +170,7 @@ h2 {
     font-size: 1.5rem;
     padding: 1% 5% 1% 5%; 
     margin: 0.1rem;
-    font-family: merienda;
+    font-family: merienda, sans-serif;
     box-shadow: 0 5px 5px 0 #17171786, -5px 5px 5px 0 #17171739;
 }
 
