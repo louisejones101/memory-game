@@ -235,7 +235,7 @@ Add in the ability to close the modal pop ups by clicking outside the box to off
 
 # Testing
 
-Throughout the project I used Google Chrome Dev Tools to check the layout and responsiveness.  I regularly tried out the game and tested it features afer making changes.
+Throughout the project I used Google Chrome Dev Tools to check the layout and responsiveness.  I regularly tried out the game and tested its features afer making changes.
 
 ## Accessibility Testing
 
@@ -513,7 +513,9 @@ During this project I researche how to code with javascript, watching tutorials 
 W3schools - modals, grids
 Stack Overflow - used to look for answers whilst debugging issues
 
-Youtube tutorials on building javascript games
+Youtube tutorials on building javascript games - main tutorial was by 'DevelopedByEd' which I followed along with as I was coding.  I used his code to build the main grid of the game, the cards, the flipped feature etc, and then changed, removed and added code and features to suit my design.  
+
+I also watched the tutorial by Ania Kubów on Youtube which helped me to understand the structure of building a memory game and using arrays.  - Make MEMORY GAME in JavaScript, HTML and CSS for your portfolio, by Ania Kubów.
 
 Code Institute - Slack Community - for updates on github and the IDE's.
 
