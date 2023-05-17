@@ -158,6 +158,8 @@ Once the user has successfully matched all the pairs of cards another modal pops
 
 The cards have a coloured background and then are flipped over to reveal the image.  The buttons change colour when clicked to show that they have been activated.  The modal backgrounds are a slightly translucent black colour to partially hide the screen behind so as not to distracted from the message on the screen.
 
+The site has a favicon as the website icon which was created using the coral and blue colours of the grid and the first letters of the Title.
+
 <br>
 
 
@@ -177,7 +179,19 @@ The cards have a coloured background and then are flipped over to reveal the ima
 
 <br>
 
-ghjg
+In order to make the site as accessible as possible I followed the w3c guidelines.
+
+The font families and font size were chosen for their readability.
+
+Colours for the backgrounds and the text where chosen to give as much contrast as possible for users to be able to see the text clearly. During testing using Wave some of the text was flagged as having slight contrast issues so changes were made to improve this (discussed in testing below).
+
+Alt tags with clear descriptive text were given to each of the images on the site.
+
+A clear structure to the flow of the site and appropriate headings on the page in order of importance.
+
+Aria-labels added to the form and the social media icon links to allow them to be read by screen readers.
+
+
 
 <br>
 
@@ -210,7 +224,7 @@ close modals by clicking outside the box
 
   Google Fonts - used for the Typography on the page.
 
-  favicon ????
+  favicon.io  - used to generate the favicon for the site
 
   Google Dev Tools - to test the style features, layout of pages and responsiveness as the site was being built.
 
@@ -227,6 +241,9 @@ close modals by clicking outside the box
 # Testing
 
 ## Accessibility Testing
+
+
+
 ## Responsiveness
 ## Browser Compatibility
 ## Features
@@ -240,7 +257,7 @@ close modals by clicking outside the box
 
 # Bugs
 
-I have been testing throughout the build using Google dev tools and fixing problems as they arised.
+I have been testing throughout the build using Google dev tools and fixing problems as they arised.  Images not resizing properly in the grid.  perspective fundtion in 3d causing glitch where parts of other cards being shown when a card is clicked.  counter not resetting.  
 
 
 # Deployment and Local Development
@@ -297,6 +314,11 @@ How to clone the repository:-
 YouTube tutorial by "DevelopedByEd' - Awesome Vanilla JavaScript Memory Card Game Tutorial"  https://www.youtube.com/watch?v=-tlb4tv4mC4 - I followed this tutorial to build the main grid of the game and the flip functions.  The main game container, grid and cards code was used and edited to fit what I wanted.  
 
 W3 Schools - How to make a modal box with CSS.  https://www.w3schools.com/howto/howto_css_modals.asp  - I used some of the CSS styling from this example for my modal background to get the partly transparent overlay, I edited to suit my project.
+
+w3schools for general code ideas
+
+Stack overflow - when having problems with any bit of code then this channel used to look at different answers given.
+
 
 <br>
 
