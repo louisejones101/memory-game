@@ -250,7 +250,13 @@ close modals by clicking outside the box
 ## Testing User Stories
 ## Lighthouse
 ## W3C Validator
+## JSHint
+
+section should be a div
+
 ## W3C Jigsaw
+
+w3c validator one error - unneccesary bg-image position - relative, removed
 
 <br>
 

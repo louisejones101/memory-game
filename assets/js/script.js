@@ -129,8 +129,8 @@ playAgainButton.onclick = function() {  // function to close rules modal
 
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
 resetButton.onclick = function() {   // function to reset game 
-resetGame(); // call the resetGame function
-resetCounter(); //reset the counter
+    resetGame(); // call the resetGame function
+    resetCounter(); //reset the counter
 };
 
 
