@@ -12,8 +12,7 @@ body {
 .bg-image {
     background-image: url("../images/CardGameBackgroundweb.jpg"); 
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 .title {
@@ -42,7 +41,7 @@ h2 {
     
 }
 
-/* Container holding the game grid */
+/* Container holding the game grid - styling taken from Developed by Ed tutorial and changed*/
 
 .gameContainer {
     padding: 2.2%;
@@ -101,7 +100,7 @@ h2 {
 
 /* modals */
 
-.modal {
+.modal {  /* taken from W3 schools example and edited*/
     display: none;
     width: 100%;
     min-height: 100%;
