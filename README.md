@@ -77,9 +77,13 @@ Once all of the cards have been found the user will get a pop up congratulating 
 
 *   I want to be able to see and understand the rules of the game before I play.
 
-*   I want to be able to reset the game and timer mid game if I want to finish it early or start again.  
+*   I want to be able to click two cards at a time and reveal the cards that I have clicked on.
 
-*   I want to be told when the game has finished, and find out how much time I took and how many moves I made.
+*   I want the cards to stay revealed if they are a match and flip back over if not.
+
+*   I want to be able to reset the game and the counter if I want to finish it early or start again.  
+
+*   I want to be told when the game has finished. 
 
 *   I want to be offered the opportunity to play again.  
 
@@ -133,9 +137,17 @@ The wireframes for this project were created by hand on the Ipad in Procreate.
 
 <kbd><img src="assets/images/readmeimages/modalpopupwireframes.jpg"  width="500"></kbd>
 
-  ### Page Features
+<br>
 
-The website consists of a main game page.  The game page contains the title of the game, the game grid, a background image, a rules button, a reset came button and a move counter.  When the user clicks on the rules button a modal pops up on screen and the user has to click the play Game button in the modal to close the window and begin the game.  Once the user has successfully matched all the pairs of cards another modal pops up telling the user they have won the game. The user can then click the play again button to return to the game.  Once all the pairs have been found and the win modal is activated all of the cards are reset in the background, the counter is returned to 0 and the cards are shuffled to new positions. The cards have a coloured background and then are flipped over to reveal the image.  The buttons change colour when clicked to show that they have been activated.  The modal backgrounds are a slightly translucent black colour to partially hide the screen behind so as not to distracted from the message on the screen.
+## Page Features
+
+The website consists of a main game page.  The game page contains the title of the game, the game grid, a background image, a rules button, a reset came button and a move counter.  When the user clicks on the rules button a modal pops up on screen and the user has to click the play Game button in the modal to close the window and begin the game.  
+
+Once the user has successfully matched all the pairs of cards another modal pops up telling the user they have won the game. The user can then click the play again button to return to the game.  All of the cards are reset when the game has been succesfully completed. The cards are flipped back over, the counter is returned to 0 and the cards are shuffled to new positions. 
+
+The cards have a coloured background and then are flipped over to reveal the image.  The buttons change colour when clicked to show that they have been activated.  The modal backgrounds are a slightly translucent black colour to partially hide the screen behind so as not to distracted from the message on the screen.
+
+<br>
 
 
 | Game | Game cards flipped |             
@@ -150,23 +162,34 @@ The website consists of a main game page.  The game page contains the title of t
 
 <br> 
 
-### Accessibility
+## Accessibility
+
+<br>
+
+ghjg
+
+<br>
 
 
-### Future Implementations
 
-  Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.  
+## Future Implementations
 
-  change the background image layout on small mobile devices 
+Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.  
 
-  close modals by clicking outside the box
+change the background image layout on small mobile devices 
 
-## Technologies
-  ### Languages Used
+close modals by clicking outside the box
+
+
+<br>
+
+# Technologies
+
+## Languages Used
 
   HTML, CSS and Javascript
 
-  ### Fameworks Libraries and Programs Used
+## Fameworks Libraries and Programs Used
 
   Procreate - used for the wireframes
 
@@ -188,23 +211,30 @@ The website consists of a main game page.  The game page contains the title of t
 
   Wave by Webaim - Used to check the accessibility of the site
 
+<br>
 
-  ### Accessibility Testing
-  ### Responsiveness
-  ### Browser Compatibility
-  ### Features
-  ### Testing User Stories
-  ### Lighthouse
-  ### W3C Validator
-  ### W3C Jigsaw
-## Bugs
+# Testing
+
+## Accessibility Testing
+## Responsiveness
+## Browser Compatibility
+## Features
+## Testing User Stories
+## Lighthouse
+## W3C Validator
+## W3C Jigsaw
+
+<br>
+
+
+# Bugs
 
 I have been testing throughout the build using Google dev tools and fixing problems as they arised.
 
 
-## Deployment and Local Development
+# Deployment and Local Development
 
-### Deployment Instructions
+## Deployment Instructions
 
 The site is deployed using GitHub pages
 
@@ -222,7 +252,7 @@ You will then see a notification at the top of the page to say that the site is 
 
 <br>
 
-### Local Development
+## Local Development
 
 How to fork the respository:-
 
@@ -249,17 +279,23 @@ How to clone the repository:-
 <br>
 <br>
 
-## Credit Section
-  ### Code Used
-  ### Content
+# Credit Section
+
+## Code Used
+
+## Content
   
 Am I responsive - (https://ui.dev/amiresponsive)
 
 Colour palette generator - coolors - (https://coolors.co/22292f-035746-caa59b-fcf8cf)
 
-  ### Images
-  ### information
-## Acknowledgements
+## Images
+
+## information
+
+<br>
 
 
-Future implementations - log in, record scores.  
+# Acknowledgements
+
+
