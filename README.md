@@ -9,7 +9,7 @@ This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of
 
 <br>
 
-<kbd><img src="assets/images/iamresponsive.jpg"  width="800"></kbd>
+<kbd><img src="assets/images/readmeimages/iamresponsive.jpg"  width="800"></kbd>
 
 <br>
 
@@ -93,7 +93,7 @@ The color scheme chosen were greens blues and vibrant coral.  The inspiration fo
 
 Below is a screenshot of the colours used.
 
-<kbd><img src="assets/images/colourpalette.png"  width="800"></kbd>
+<kbd><img src="assets/images/readmeimages/colourpalette.png"  width="800"></kbd>
 
 
 
@@ -119,19 +119,19 @@ The wireframes for this project were created by hand on the Ipad in Procreate.
 
 ### Main page Desktop wireframe
 
-<kbd><img src="assets/images/destktopwireframe.jpg"  width="500"></kbd>
+<kbd><img src="assets/images/readmeimages/destktopwireframe.jpg"  width="500"></kbd>
 
 <br>
 
 ### Main page tablet device and mobile wireframes
 
-<kbd><img src="assets/images/tabletandmobilewireframe.jpg"  width="500"></kbd>
+<kbd><img src="assets/images/readmeimages/tabletandmobilewireframe.jpg"  width="500"></kbd>
 
 <br>
 
 ### Modal wireframes
 
-<kbd><img src="assets/images/modalpopupwireframes.jpg"  width="500"></kbd>
+<kbd><img src="assets/images/readmeimages/modalpopupwireframes.jpg"  width="500"></kbd>
 
   ### Page Features
 
