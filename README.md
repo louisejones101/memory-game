@@ -246,7 +246,7 @@ Bwlow is the screenshot showing the results with the img alt tags missing.ß
 <br>
 
 Screenshot 1
-<kbd><img src="assets/read-me-images/contrast-errors-wave.png" width="800"></kbd>
+<kbd><img src="assets/images/readmeimages/.png" width="800"></kbd>
 
 
 
@@ -262,6 +262,11 @@ The table below contains responsiveness results for some of the standard devices
 |Game grid aligns correctly|yes|yes|yes|yes|yes|yes|
 |Modals correct|yes|yes|yes|yes|yes|yes|
 
+Below are some screenshots of the game on different devices.
+
+|Iphone 6/7/8|Ipad mini|
+|-------|----|
+|<img src="assets/images/readmeimages/iphone.png" width="400">|<img src="assets/images/readmeimages/ipadmini.png">|
 
 ## Browser Compatibility
 
@@ -305,7 +310,8 @@ Below are screenshots of the results from the lighthouse panel.
 
 | Desktop | Mobile |
 |------------------------|-----------------------|
-|<img src="assets/readmeimages/">|<img src="assets/readmeimages/>|
+|<img src="assets/images/readmeimages/lighthouse1.png" width="500">|<img src="assets/images/readmeimages/lighthousemobile.png" width="500">|
+
 </div>
 
 
@@ -316,7 +322,7 @@ To test the HTML code in the index.html I run the code through the W3 Validator.
 
 | Before | After |
 |------------------------|-----------------------|
-|<img src="assets/readmeimages/">|<img src="assets/readmeimages/>|
+|<img src="assets/images/readmeimages/w3validator.png">|<img src="assets/images/readmeimages/w3validator2.png">|
 </div>
 
 
@@ -328,7 +334,7 @@ To check the CSS code I copied and pasted the code into the w3c css validator.  
 
 | CSS before | CSS after |
 |------------------------|-----------------------|
-|<img src="assets/readmeimages/">|<img src="assets/readmeimages/">|
+|<img src="assets/images/readmeimages/jigsaw.png" width="430">|<img src="assets/images/readmeimages/jigsaw2.png" width="500">|
 
 </div>
 
@@ -345,7 +351,7 @@ It also suggested that there were some long functions in there, I did not change
 
 | JSHint before | JSHint after |
 |------------------------|-----------------------|
-|<img src="assets/readmeimages/">|<img src="assets/readmeimages/">|
+|<img src="assets/images/readmeimages/jshint1.png">|<img src="assets/images/readmeimages/jshint2.png">|
 
 </div>
 
