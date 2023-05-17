@@ -294,6 +294,10 @@ How to clone the repository:-
 
 ## Code Used
 
+YouTube tutorial by "DevelopedByEd' - Awesome Vanilla JavaScript Memory Card Game Tutorial"  https://www.youtube.com/watch?v=-tlb4tv4mC4 - I followed this tutorial to build the main grid of the game and the flip functions.  The main game container, grid and cards code was used and edited to fit what I wanted.  
+
+W3 Schools - How to make a modal box with CSS.  https://www.w3schools.com/howto/howto_css_modals.asp  - I used some of the CSS styling from this example for my modal background to get the partly transparent overlay, I edited to suit my project.
+
 ## Content
   
 Am I responsive - (https://ui.dev/amiresponsive)
@@ -301,6 +305,16 @@ Am I responsive - (https://ui.dev/amiresponsive)
 Colour palette generator - coolors - (https://coolors.co/22292f-035746-caa59b-fcf8cf)
 
 ## Images
+
+The Bird images for the card faces were taken from this free download on freepik by macrovector. - 
+ "https://www.freepik.com/free-vector/exotic-birds-set_3817867.htm#query=jungle%20birds&position=9&from_view=search&track=ais"
+
+The background was made up from part of a tropical background image by pikisuperstar which I downloaded from freepik.  The file was a psd file with layers so I was able to change the image around, delete and resize some of the features to suit what I wanted. - "https://www.freepik.com/free-vector/tropical-background_4335740.htm#page=7&query=tropical&position=1&from_view=search&track=sph">Image by pikisuperstar
+
+The blue gradient background card image was created by myself in photoshop.
+
+<br>
+
 
 ## information
 
