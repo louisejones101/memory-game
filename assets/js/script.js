@@ -1,11 +1,12 @@
+/*jshint esversion: 6 */
+
 // code for the code within the main grid was taken from tutorial online by "developedbyed" and edited to suit - link in ReadME
 
 // declare variables and link them to the correct class and Id names in HTML
 const gameGrid = document.querySelector('.gameGrid'); 
 const movesElem = document.querySelector('.moves'); 
 var modalOne = document.getElementById('rulesModal');
-const modalTwo = document.getElementById('winModal')
-const modalBackground = document.getElementById('modalOverlay');
+const modalTwo = document.getElementById('winModal');
 const rulesButton = document.getElementById('rulesBtn');
 const closeButton = document.getElementById('startBtn');
 const playAgainButton = document.getElementById('playAgainBtn');
@@ -104,12 +105,12 @@ const gameCards = () => [   // The array that is going to hold the card images
 rulesButton.addEventListener('click', rulesBtn);  // event listener for when the rules button is clicked
 rulesButton.onclick = function() {   // function to open rules modal
     modalOne.style.display = 'block';  //block the default hidden in css
-}
+};
 
 closeButton.addEventListener('click', startBtn); // event listener for when the start game button is clicked
 closeButton.onclick = function() {  // function to close rules modal
     modalOne.style.display = 'none';  // return modal to hidden
-}
+};
 
 //win Modal
 
@@ -122,7 +123,7 @@ playAgainButton.addEventListener('click', playAgainButton); // event listener fo
 playAgainButton.onclick = function() {  // function to close rules modal
     modalTwo.style.display = 'none';
     resetCounter(); 
-}
+};
 
 // reset Game event listener and reset button function to call reset game function
 
@@ -130,7 +131,7 @@ resetButton.addEventListener('click', resetGameBtn);  // event listener for when
 resetButton.onclick = function() {   // function to reset game 
 resetGame(); // call the resetGame function
 resetCounter();
-}
+};
 
 
 // functions for the moves counter
@@ -138,7 +139,7 @@ resetCounter();
 function movesCounter() {  
     counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
     movesElem.innerHTML = counter;  // show the increasing counter number in the HTML 
-}
+};
 
 function resetCounter(){  
     counter = 0;  //reset the counter to 0
@@ -176,7 +177,7 @@ const generateCards = () => {
         card.appendChild(cardBack);
         //add eventlistener which calls the checkmatch function
         card.addEventListener('click', (e) => {
-            card.classList.toggle("toggleCard");  
+            card.classList.toggle('toggleCard');  
             checkMatch(e); // call checkmatch function
         }); 
     });
@@ -187,7 +188,6 @@ const checkMatch = (e) => {
     const cardClicked = e.target; 
     cardClicked.classList.add('cardPicked'); //creates a cardPicked class
     const cardsPicked = document.querySelectorAll('.cardPicked');  //cards that are clicked (cardPicked) added to cardsPicked
-    const toggleCard = document.querySelectorAll('toggleCard'); 
     // if statement to check if the card names of the picked cards match
     if (cardsPicked.length === 2){ 
          if (cardsPicked[0].getAttribute('name') === cardsPicked[1].getAttribute('name')){  // if the cards match remove them from the cardPicked class and make them unclickable
@@ -201,7 +201,7 @@ const checkMatch = (e) => {
                 card.classList.remove('cardPicked');
                 setTimeout(() => card.classList.remove('toggleCard'), 1000); // set a delay of 1 sec before flipping cards back over
             });
-        };
+        }
         movesCounter();  //call movesCounter function
     }
     // if cards matched is equal to all the cards alert win
@@ -209,15 +209,15 @@ const checkMatch = (e) => {
         setTimeout(() => {  // set a 1 second delay before displaying the winModal
             winModalMessage();  //call the winModal
         }, 1000);   
-    };   
+    }  
 };
 
 // resetGame function
 
 const resetGame = () => {
     let cardData = randomiseCards ();  // apply the randomiseCards function to the cardData
-    let cardFace = document.querySelectorAll(".cardFace");
-    let cardReset = document.querySelectorAll(".card");
+    let cardFace = document.querySelectorAll('.cardFace');
+    let cardReset = document.querySelectorAll('.card');
     cardData.forEach((item, index) => {   // loop through the card data and apply the code below to each
         cardReset[index].classList.remove('toggleCard');   // remove the togglecard that keeps the cards facing up
         setTimeout(() => {   //set a time delay for 1s the code below
