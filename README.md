@@ -246,7 +246,7 @@ Bwlow is the screenshot showing the results with the img alt tags missing.ß
 <br>
 
 Screenshot 1
-<kbd><img src="assets/images/readmeimages/.png" width="800"></kbd>
+<kbd><img src="assets/images/readmeimages/webaim.png" width="800"></kbd>
 
 
 
@@ -297,6 +297,13 @@ For this section I manually tested every feature on every page to ensure all the
 
 |User Story|Testing|
 |-------|----|
+|As a user I want to be able to see clearly on arriving at the site that it is a memory game, with a clear title and layout.|You clearly see the title of the game with a headline explaining 'match the pairs'|
+|I want to be able to see and understand the rules of the game before I play.|The rules button is clearly visible in button format below the game.  The pop up works and shows the rules in bullet point form|
+|I want to be able to click two cards at a time and reveal the cards that I have clicked on.|Two cards can be clicked at a time.  However a glitch was noted (see below)|
+|I want the cards to stay revealed if they are a match and flip back over if not.|Cards stay revealed, cards flip back over when no match|
+|I want to be able to reset the game and the counter if I want to finish it early or start again.|The counter resets when button clicked, the cards flip back over and the cards are reshuffled| 
+|I want to be told when the game has finished.|Pop up saying congratulations when the game has been completed|
+|I want to be offered the opportunity to play again.|A button in the win pop up where the user can click to start again|
 
 <br>
 
@@ -317,12 +324,14 @@ Below are screenshots of the results from the lighthouse panel.
 
 ## W3 Validator
 
-To test the HTML code in the index.html I run the code through the W3 Validator.  It came back with an error stating that there was a section where a div could be.  So I changed the section to a div and re-run the code through a second time.  There were no errors returned.
+To test the HTML code in the index.html I run the code through the W3 Validator.  It came back with an error stating that there was a section where a div could be.  So I changed the section to a div and re-run the code through a second time.  There were no errors returned.  Below is a screenshot of the validator result before the changes were made.  
 
+<br>
 
-| Before | After |
+| HTML before | HTML after |
 |------------------------|-----------------------|
-|<img src="assets/images/readmeimages/w3validator.png">|<img src="assets/images/readmeimages/w3validator2.png">|
+|<img src="assets/images/readmeimages/jigsaw.png">|<img src="assets/images/readmeimages/w3validator.png">|
+
 </div>
 
 
