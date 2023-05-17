@@ -19,66 +19,82 @@ const gameCards = () => [   // The array that is going to hold the card images
 {
     name: 'bird1', 
     imgSrc: 'assets/images/bird1b.png',
+    alt: 'an icon of a blue bird in flight',
 },
 {
     name: 'bird2', 
     imgSrc: 'assets/images/bird2.png',
+    alt: 'an icon of a red bird',
 },
 {
     name: 'bird3', 
     imgSrc: 'assets/images/bird3.png',
+    alt: 'an icon of a flamingo',
 },
 {
     name: 'bird4', 
     imgSrc: 'assets/images/bird4.png',
+    alt: 'an icon of a toucan',
 },
 {
     name: 'bird5', 
     imgSrc: 'assets/images/bird5.png',
+    alt: 'an icon of a red parrot',
 },
 {
     name: 'bird6', 
     imgSrc: 'assets/images/bird6.png',
+    alt: 'an icon of pheasant type bird',
 },
 {
     name: 'bird7', 
     imgSrc: 'assets/images/bird7.png',
+    alt: 'an icon of green exotic bird',
 },
 {
     name: 'bird8', 
     imgSrc: 'assets/images/bird8.png',
+    alt: 'an icon of an orange exotic',
 },
 {
     name: 'bird1', 
     imgSrc: 'assets/images/bird1b.png',
+    alt: 'an icon of a blue bird in flight',
 },
 {
     name: 'bird2', 
     imgSrc: 'assets/images/bird2.png',
+    alt: 'an icon of a red bird',
 },
 {
     name: 'bird3', 
     imgSrc: 'assets/images/bird3.png',
+    alt: 'an icon of a flamingo',
 },
 {
     name: 'bird4', 
     imgSrc: 'assets/images/bird4.png',
+    alt: 'an icon of a toucan',
 },
 {
     name: 'bird5', 
     imgSrc: 'assets/images/bird5.png',
+    alt: 'an icon of a red parrot',
 },
 {
     name: 'bird6', 
     imgSrc: 'assets/images/bird6.png',
+    alt: 'an icon of pheasant type bird',
 },
 {
     name: 'bird7', 
     imgSrc: 'assets/images/bird7.png',
+    alt: 'an icon of green exotic bird',
 },
 {
     name: 'bird8', 
     imgSrc: 'assets/images/bird8.png',
+    alt: 'an icon of an orange exotic',
 },
 ];
 
