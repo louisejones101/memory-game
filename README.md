@@ -91,10 +91,15 @@ Once all of the cards have been found the user will get a pop up congratulating 
 
 ## Design
 
+The aim of this project was to build an interactive game that was fun, easy to operate and visually appealing. The game is able to be played by a user of any age.
+
 ### Colour Scheme
 
-The color scheme chosen were greens blues and vibrant coral.  The inspiration for the colour palette was taken from the background tropical image that I chose to use.  The colours chosen are bright and colourful.  
+The color scheme chosen were a vibrant coral, yellow, blues and greens.  The inspiration for the colour palette was taken from the background tropical image that I chose to use.  The colours chosen are bright and colourful. 
 
+The title text, card backs, and buttons are the same colour to match the blue in the toucan.  The coral background of the game grid, was chosen to be similar to the toucans beak colour and matches the modal backgrounds to tie them all togther. The move counter text and the modal text are black so that they are able to be read easily against the coral background.  
+
+The light yellow background was chosen to have a calming effect against the busy game colours and toucan image and help to distinguish between the game grid and the background.  
 Below is a screenshot of the colours used.
 
 <kbd><img src="assets/images/readmeimages/colourpalette.png"  width="800"></kbd>
@@ -105,13 +110,19 @@ Below is a screenshot of the colours used.
 
 ### Typography
 
-The fonts for this project were imported from Google Fonts (link in credits).  The main font chosen was Merienda which I thought was quite a playful funky font.  For the Modal contents Calibri was used as there is quite alot of text and calibri is easier to read at small sizes than Merienda.  The back up text is San-serif.
+The fonts for this project were imported from Google Fonts, link in the [credit section](#credit-section).  The main font chosen was Merienda which I thought was quite a playful funky font.  For the Modal contents Calibri was used as there was quite alot of text and calibri is easier to read at small sizes than Merienda.  The back up text is San-serif. 
+
+| Merienda font | Calibri |             
+|--------|--------|
+|<img src="assets/images/readmeimages/mainfont.png" width="500">|<img src="assets/images/readmeimages/modalcontentfont.png" >
+
+
 
 <br>
 
 ### Imagery
 
-The pictures used for his site were sourced from online websites that offer free images (these are listed in the [credit section](#credit-section)). The images were resized using Photoshop and Illustrator.
+The pictures used for his site were sourced from online websites that offer free images (these are listed in the [credit section](#credit-section). The bird images used for the face of the cards were on one sheet and had to be split down to smaller images.  The images were resized using Photoshop and Illustrator.
 
 <br>
 
