@@ -9,7 +9,7 @@ This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of
 
 <br>
 
-<kbd><img src=""  width="800"></kbd>
+<kbd><img src="assets/images/iamresponsive.jpg"  width="800"></kbd>
 
 <br>
 
@@ -119,19 +119,19 @@ The wireframes for this project were created by hand on the Ipad in Procreate.
 
 ### Main page Desktop wireframe
 
-<kbd><img src=""  width="500"></kbd>
+<kbd><img src="assets/images/destktopwireframe.jpg"  width="500"></kbd>
 
 <br>
 
 ### Main page tablet device and mobile wireframes
 
-<kbd><img src=""  width="500"></kbd>
+<kbd><img src="assets/images/tabletandmobilewireframe.jpg"  width="500"></kbd>
 
 <br>
 
-### Modal tablet device and mobile wireframes
+### Modal wireframes
 
-<kbd><img src=""  width="500"></kbd>
+<kbd><img src="assets/images/modalpopupwireframes.jpg"  width="500"></kbd>
 
   ### Page Features
 
@@ -142,7 +142,9 @@ The website consists of a main game page.  The game page contains the title of t
 
 ### Future Implementations
 
-  Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.
+  Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.  
+
+  change the background image layout on small mobile devices 
 
 
 ## Technologies
