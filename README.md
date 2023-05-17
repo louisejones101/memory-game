@@ -521,6 +521,8 @@ I also watched the tutorial by Ania Kubów on Youtube which helped me to underst
 
 Code Institute - Slack Community - for updates on github and the IDE's.
 
+How to Create a Memory Game in JavaScript, by Ferenc Almasi -  https://webtips.dev/memory-game-in-javascript
+
 <br>
 <br>
 
