@@ -179,18 +179,9 @@ The site has a favicon as the website icon which was created using the coral and
 
 <br>
 
-In order to make the site as accessible as possible I followed the w3c guidelines.
-
 The font families and font size were chosen for their readability.
 
-Colours for the backgrounds and the text where chosen to give as much contrast as possible for users to be able to see the text clearly. During testing using Wave some of the text was flagged as having slight contrast issues so changes were made to improve this (discussed in testing below).
-
-Alt tags with clear descriptive text were given to each of the images on the site.
-
-A clear structure to the flow of the site and appropriate headings on the page in order of importance.
-
-Aria-labels added to the form and the social media icon links to allow them to be read by screen readers.
-
+Colours for the backgrounds and the text where chosen to give as much contrast as possible for users to be able to see the text clearly. During testing using Wave it was highlighted that the images did not contain alt tags.  Discussed below in the testing section.
 
 
 <br>
@@ -236,29 +227,129 @@ close modals by clicking outside the box
 
   Wave by Webaim - Used to check the accessibility of the site
 
+  JSHint - to test the JS code
+
 <br>
 
 # Testing
 
+Throughout the project I used Google Chrome Dev Tools to check the layout and responsiveness.  I regularly tried out the game and tested it features afer making changes.
+
 ## Accessibility Testing
+
+In order to test the accessibility of the site I ran the pages through [Wave](https://wave.webaim.org/) to see if there were any issues.
+
+Below shows the some of the things it flagged during the test.  As you can see from the first screenshot below Wave flagged that the images used for the cards didn't have alt tags, the gameGrid was generated in JS using and array for the data but for some reason wave doesnt seem to pick them up.  I did not change anything.  
+
+Bwlow is the screenshot showing the results with the img alt tags missing.ß
+
+<br>
+
+Screenshot 1
+<kbd><img src="assets/read-me-images/contrast-errors-wave.png" width="800"></kbd>
+
 
 
 
 ## Responsiveness
-## Browser Compatibility
-## Features
-## Testing User Stories
-## Lighthouse
-## W3C Validator
-## JSHint
 
-section should be a div
+The table below contains responsiveness results for some of the standard devices in the Google Dev Tools options.
+
+|Responsiveness|Iphone 8)|Samsung Galaxy S8 (360px)|Ipad Mini (768)|Surface Pro 7 (912px)|Galaxy Fold (280px)|Nest Hub (1024px)|Notes               |
+|--------------|-----------------|-------------------------|---------------|---------------------|-------------------|-----------------|--------------------|
+|Text scales down as expected|yes|yes|yes|yes|yes|yes|
+|Columns align as designed|yes|yes|yes|yes|yes|yes|
+|Game grid aligns correctly|yes|yes|yes|yes|yes|yes|
+|Modals correct|yes|yes|yes|yes|yes|yes|
+
+
+## Browser Compatibility
+
+I tested all of the website pages in three different browsers to check that everything worked, the layout and appearance remained as it should.  The three browsers I chose were the three I had easy access to on my Apple Macbook, Google Chrome, Firefox and Safari.  Everything worked as it should in Chrome and Firefox however in Safari the navigation menu was left aligned on devices larger than tablet size rather than right aligned as intended.  I am not sure if this was due to Safari being an old version and not up to date. (The operating system on my mac doesnt allow for update).
+
+|   |Google Chrome|Firefox|Safari|Notes |
+|---|-------------|-------|------|------|
+|intended appearance|Good|good|good|
+|intended responsiveness|Good|Good|good|
+
+<br>
+<br>
+
+## Features
+
+
+For this section I manually tested every feature on every page to ensure all the links/buttons/form did as they should.  Below are the results.
+
+<br>
+
+|Feature|Test|Outcome|
+|-------|----|-------|
+
+<br>
+
+## Testing User Stories
+
+
+|User Story|Testing|
+|-------|----|
+
+<br>
+
+## Lighthouse
+
+As part of the testing I used Lighthouse in Google Chrome to test the performance, accessibility, best practices and SEO.  I tested both the desktop and the mobile version.  
+
+Both the desktop and mobile versions had a good scores for best practice, performance and SEO.  The Accessibility score was in the lower 80's due to there not being an img alt tag on the background img for the cards.  The cards were in the CSS file so I could not add alt tags to them.  
+
+Below are screenshots of the results from the lighthouse panel.
+
+| Desktop | Mobile |
+|------------------------|-----------------------|
+|<img src="assets/readmeimages/">|<img src="assets/readmeimages/>|
+</div>
+
+
+## W3 Validator
+
+To test the HTML code in the index.html I run the code through the W3 Validator.  It came back with an error stating that there was a section where a div could be.  So I changed the section to a div and re-run the code through a second time.  There were no errors returned.
+
+
+| Before | After |
+|------------------------|-----------------------|
+|<img src="assets/readmeimages/">|<img src="assets/readmeimages/>|
+</div>
+
 
 ## W3C Jigsaw
 
-w3c validator one error - unneccesary bg-image position - relative, removed
+To check the CSS code I copied and pasted the code into the w3c css validator.  It highlighted one error with a 'unneccesary bg-image position - relative,' which I removed.  After the change had been made in the CSS file, the code was re-run through the validator and came back with no errors.
 
 <br>
+
+| CSS before | CSS after |
+|------------------------|-----------------------|
+|<img src="assets/readmeimages/">|<img src="assets/readmeimages/">|
+
+</div>
+
+
+## JSHint
+
+To test the JS code I copied and pasted the code into JSHint.  It returned a few errors as you can see in the first image below.  Most of them were simple mistakes that could be changed.  All unnecessary semi-colons, and two unused variables were removed.  Missing semi-colons were added in.  
+
+The remaining corrections it recommended were for 4 undefined variables.  These were the variables used to link to the HMTL document.  Due to time restraints I didnt have time to go back and take a look at them so they were left.  
+
+It also suggested that there were some long functions in there, I did not change these, however for future projects I will used shorter functions.  The code was then run through JSHint again as you can see in the second image below.
+
+<br>
+
+| JSHint before | JSHint after |
+|------------------------|-----------------------|
+|<img src="assets/readmeimages/">|<img src="assets/readmeimages/">|
+
+</div>
+
+
 
 
 # Bugs
