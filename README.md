@@ -5,7 +5,7 @@ This Tropical Birds Pairs Memory Game was created for the Milestone 2 project of
 <br>
 <br>
 
-[View the Game here]
+[View Tropical Birds Game Here](https://louisejones101.github.io/memory-game/)
 
 <br>
 
@@ -95,17 +95,155 @@ Below is a screenshot of the colours used.
 
 <kbd><img src="assets/images/colourpalette.png"  width="800"></kbd>
 
-<br>
 
-<kbd><i""  width="800"></kbd>
 
 <br>
 
 ### Typography
 
-The fonts for this project were imported from Google Fonts (link in credits).  The fonts chosen were ....  All three of these fonts are easy to read and spaced nicely. 
+The fonts for this project were imported from Google Fonts (link in credits).  The main font chosen was Merienda which I thought was quite a playful funky font.  For the Modal contents Calibri was used as there is quite alot of text and calibri is easier to read at small sizes than Merienda.  The back up text is San-serif.
 
 <br>
+
+### Imagery
+
+The pictures used for his site were sourced from online websites that offer free images (these are listed in the [credit section](#credit-section)). The images were resized using Photoshop and Illustrator.
+
+<br>
+
+## Wireframes
+
+The wireframes for this project were created by hand on the Ipad in Procreate.
+
+<br>
+
+### Main page Desktop wireframe
+
+<kbd><img src=""  width="500"></kbd>
+
+<br>
+
+### Main page tablet device and mobile wireframes
+
+<kbd><img src=""  width="500"></kbd>
+
+<br>
+
+### Modal tablet device and mobile wireframes
+
+<kbd><img src=""  width="500"></kbd>
+
+  ### Page Features
+
+The website consists of a main game page.  The game page contains the title of the game, the game grid, a rules button, a reset came button and a move counter.  When the user clicks on the rules button a modal containing the rules text pop ups on screen and the user has to click the play Game button in the modal to close the window and begin the game.  Once the user has successfully matched all the pairs of cards another modal pops up telling the user they have won the game.
+
+### Accessibility
+
+
+### Future Implementations
+
+  Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.
+
+
+## Technologies
+  ### Languages Used
+
+  HTML, CSS and Javascript
+
+  ### Fameworks Libraries and Programs Used
+
+  Procreate - used for the wireframes
+
+  Git and Github - for version control, storing of files and deploying the site
+
+  Gitpod - used as the coding environment.
+
+  Google Fonts - used for the Typography on the page.
+
+  favicon ????
+
+  Google Dev Tools - to test the style features, layout of pages and responsiveness as the site was being built.
+
+  Photoshop and Illustrator - resizing and editing of images
+
+  W3C Markup Validation - to test HTML code
+
+  W3C Jigsaw - to test CSS code
+
+  Wave by Webaim - Used to check the accessibility of the site
+
+
+  ### Accessibility Testing
+  ### Responsiveness
+  ### Browser Compatibility
+  ### Features
+  ### Testing User Stories
+  ### Lighthouse
+  ### W3C Validator
+  ### W3C Jigsaw
+## Bugs
+
+I have been testing throughout the build using Google dev tools and fixing problems as they arised.
+
+
+## Deployment and Local Development
+
+### Deployment Instructions
+
+The site is deployed using GitHub pages
+
+To deploy the site:-
+
+1.  Log in or sign up to Github
+2.  Click on the respository name
+3.  Click on settings
+4.  Find Pages on the lefthand side menu and click
+5.  Scroll to Build and Deployment section
+6.  Make sure the Deploy from a branch is selected in the Source box
+7.  In the Branch dropdown menu select Main and root and then save.
+
+You will then see a notification at the top of the page to say that the site is live and a link to visit the site.  This may take a few minutes.
+
+<br>
+
+### Local Development
+
+How to fork the respository:-
+
+1.  Log in or sign up to Github
+2.  Click on the respository name
+3.  Click on Fork in the top-right hand corner of the page
+4.  Select the owner of the respository
+5.  Add a description of your fork (optional)
+6.  Copy the main branch only (default)
+7.  Click on the create Fork button
+
+<br>
+
+How to clone the repository:-
+
+1.  Log in or sign up to Github
+2.  Click on the Code button above the list of files
+3.  Copy the repository URL
+4.  Open the terminal
+5.  Change the working directory to where you want to put the cloned directory
+6.  Type 'git clone' and then add the URL
+7.  Press enter
+
+<br>
+<br>
+
+## Credit Section
+  ### Code Used
+  ### Content
+  
+Am I responsive - (https://ui.dev/amiresponsive)
+
+Colour palette generator - coolors - (https://coolors.co/22292f-035746-caa59b-fcf8cf)
+
+  ### Images
+  ### information
+## Acknowledgements
 
 
 Future implementations - log in, record scores.  
