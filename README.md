@@ -112,6 +112,8 @@ Below is a screenshot of the colours used.
 
 The fonts for this project were imported from Google Fonts, link in the [credit section](#credit-section).  The main font chosen was Merienda which I thought was quite a playful funky font.  For the Modal contents Calibri was used as there was quite alot of text and calibri is easier to read at small sizes than Merienda.  The back up text is San-serif. 
 
+<br>
+
 | Merienda font | Calibri |             
 |--------|--------|
 |<img src="assets/images/readmeimages/mainfont.png" width="500">|<img src="assets/images/readmeimages/modalcontentfont.png" >
@@ -241,19 +243,20 @@ In order to test the accessibility of the site I ran the pages through [Wave](ht
 
 Below shows the some of the things it flagged during the test.  As you can see from the first screenshot below Wave flagged that the images used for the cards didn't have alt tags, the gameGrid was generated in JS using and array for the data but for some reason wave doesnt seem to pick them up.  I did not change anything.  
 
-Bwlow is the screenshot showing the results with the img alt tags missing.ß
+Bwlow is the screenshot showing the results with the img alt tags missing.
 
 <br>
 
 Screenshot 1
 <kbd><img src="assets/images/readmeimages/webaim.png" width="800"></kbd>
 
-
-
+<br>
 
 ## Responsiveness
 
 The table below contains responsiveness results for some of the standard devices in the Google Dev Tools options.
+
+<br>
 
 |Responsiveness|Iphone 8)|Samsung Galaxy S8 (360px)|Ipad Mini (768)|Surface Pro 7 (912px)|Galaxy Fold (280px)|Nest Hub (1024px)|Notes               |
 |--------------|-----------------|-------------------------|---------------|---------------------|-------------------|-----------------|--------------------|
@@ -262,15 +265,22 @@ The table below contains responsiveness results for some of the standard devices
 |Game grid aligns correctly|yes|yes|yes|yes|yes|yes|
 |Modals correct|yes|yes|yes|yes|yes|yes|
 
+<br>
+<br>
+
 Below are some screenshots of the game on different devices.
 
 |Iphone 6/7/8|Ipad mini|
 |-------|----|
 |<img src="assets/images/readmeimages/iphone.png" width="400">|<img src="assets/images/readmeimages/ipadmini.png">|
 
+<br>
+
 ## Browser Compatibility
 
-I tested all of the website pages in three different browsers to check that everything worked, the layout and appearance remained as it should.  The three browsers I chose were the three I had easy access to on my Apple Macbook, Google Chrome, Firefox and Safari.  Everything worked as it should in Chrome and Firefox however in Safari the navigation menu was left aligned on devices larger than tablet size rather than right aligned as intended.  I am not sure if this was due to Safari being an old version and not up to date. (The operating system on my mac doesnt allow for update).
+I tested the game  in three different browsers to check that everything worked, the layout and appearance remained as it should.  The three browsers I chose were the three I had easy access to on my Apple Macbook, Google Chrome, Firefox and Safari.  Everything worked as it should in the three browsers. 
+
+<br>
 
 |   |Google Chrome|Firefox|Safari|Notes |
 |---|-------------|-------|------|------|
@@ -282,14 +292,29 @@ I tested all of the website pages in three different browsers to check that ever
 
 ## Features
 
+Throughout the project, everytime a new feature was added to the code I tested the functions etc to make sure that they were workign correctly.  There were some bugs that will be discussed in the Bugs section below.
 
-For this section I manually tested every feature on every page to ensure all the links/buttons/form did as they should.  Below are the results.
+At the end of the build I manually tested every feature on every page to ensure all the links/buttons/form did as they should.  Below are the results.
 
 <br>
 
 |Feature|Test|Outcome|
 |-------|----|-------|
+|Rules Button|Click on|Changes colour when clicked triggers a pop up for the rules|
+|Start Game Button|Click on|Closes the rules modal pop up to reveal the game grid|
+|Cards flip over|Click on|All cards flip over when clicked to reveal the image|
+|Counter increases each turn|Monitor counter|Counter increases correctly when a turn is taken|
+|Matched pairs|Find a matching pair|Cards remain flipped over once matched|
+|Pointer event disabled on matched cards|Click on matched pairs|Nothing happens when click on a matched card|
+|Reset Game Button|Click on|All cards flipped back over to original position.|
+|Cards shuffled when game reset|click on cards after reset|Card images are in different positions on the grid|
+|Counter resets on reset|observe counter on button click|Counter returns to 0|
+|Win modal triggered when game complete|find all the pairs|When all pairs found modal pop appears with win message|
+|Play Again Button|Click on|Closes winning modal|
+|Game reset after win|Look for signs of reset|Counter reset, cards flipped back over, cards reshuffled|
+|Check all features again after game has been won for bugs|Play game and test features again|All working correctly|
 
+<br>
 <br>
 
 ## Testing User Stories
@@ -306,6 +331,7 @@ For this section I manually tested every feature on every page to ensure all the
 |I want to be offered the opportunity to play again.|A button in the win pop up where the user can click to start again|
 
 <br>
+<br>
 
 ## Lighthouse
 
@@ -315,12 +341,16 @@ Both the desktop and mobile versions had a good scores for best practice, perfor
 
 Below are screenshots of the results from the lighthouse panel.
 
+<br>
+
 | Desktop | Mobile |
 |------------------------|-----------------------|
 |<img src="assets/images/readmeimages/lighthouse1.png" width="500">|<img src="assets/images/readmeimages/lighthousemobile.png" width="500">|
 
 </div>
 
+<br>
+<br>
 
 ## W3 Validator
 
@@ -334,6 +364,8 @@ To test the HTML code in the index.html I run the code through the W3 Validator.
 
 </div>
 
+<br>
+<br>
 
 ## W3C Jigsaw
 
@@ -347,6 +379,8 @@ To check the CSS code I copied and pasted the code into the w3c css validator.  
 
 </div>
 
+<br>
+<br>
 
 ## JSHint
 
@@ -364,13 +398,15 @@ It also suggested that there were some long functions in there, I did not change
 
 </div>
 
-
-
+<br>
+<br>
 
 # Bugs
 
 I have been testing throughout the build using Google dev tools and fixing problems as they arised.  Images not resizing properly in the grid.  perspective fundtion in 3d causing glitch where parts of other cards being shown when a card is clicked.  counter not resetting.  
 
+<br>
+<br>
 
 # Deployment and Local Development
 
@@ -462,11 +498,23 @@ The blue gradient background card image was created by myself in photoshop.
 
 ## information
 
+During this project I researche how to code with javascript, watching tutorials and looking at examples on various sites.  Below is a list of the sources that I used to find the answers to questions that arised.  
 
+W3schools - modals, grids
+Stack Overflow - used to look for answers whilst debugging issues
+
+Youtube tutorials on building javascript games
+
+Code Institute - Slack Community - for updates on github and the IDE's.
 
 <br>
-
+<br>
 
 # Acknowledgements
+
+My mentor Elaine Roche for answering all my questions. She is a star.
+Student support and Iris the cohort facilitator for checking in on me.
+Gemma at Tutor support for giving me advice on why a part of my code wasnt working after spending hours trying all different ways to fix it.
+
 
 
