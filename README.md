@@ -135,7 +135,20 @@ The wireframes for this project were created by hand on the Ipad in Procreate.
 
   ### Page Features
 
-The website consists of a main game page.  The game page contains the title of the game, the game grid, a rules button, a reset came button and a move counter.  When the user clicks on the rules button a modal containing the rules text pop ups on screen and the user has to click the play Game button in the modal to close the window and begin the game.  Once the user has successfully matched all the pairs of cards another modal pops up telling the user they have won the game.
+The website consists of a main game page.  The game page contains the title of the game, the game grid, a background image, a rules button, a reset came button and a move counter.  When the user clicks on the rules button a modal pops up on screen and the user has to click the play Game button in the modal to close the window and begin the game.  Once the user has successfully matched all the pairs of cards another modal pops up telling the user they have won the game. The user can then click the play again button to return to the game.  Once all the pairs have been found and the win modal is activated all of the cards are reset in the background, the counter is returned to 0 and the cards are shuffled to new positions. The cards have a coloured background and then are flipped over to reveal the image.  The buttons change colour when clicked to show that they have been activated.  The modal backgrounds are a slightly translucent black colour to partially hide the screen behind so as not to distracted from the message on the screen.
+
+
+| Game | Game cards flipped |             
+|--------|--------|
+|<img src="assets/images/readmeimages/features1.jpg">|<img src="assets/images/readmeimages/features2.jpg">|
+
+<br>
+
+| Rules modal | Win modal |             
+|--------|--------|
+|<img src="assets/images/readmeimages/features3.jpg">|<img src="assets/images/readmeimages/features4.jpg">|
+
+<br> 
 
 ### Accessibility
 
@@ -146,6 +159,7 @@ The website consists of a main game page.  The game page contains the title of t
 
   change the background image layout on small mobile devices 
 
+  close modals by clicking outside the box
 
 ## Technologies
   ### Languages Used
