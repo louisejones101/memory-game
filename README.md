@@ -192,13 +192,13 @@ Colours for the backgrounds and the text where chosen to give as much contrast a
 
 ## Future Implementations
 
-Future implementations - log in, record scores, have the modal tell your moves score.  Different levels more cards. A timer.  
+As always time restrictions limited the features I would have liked to add to the project.  I originally wanted to add a timer to the game so the user could time their performance, however this was not possible due to my own time restrictions.  
 
-change the background image layout on small mobile devices 
+Different levels to move up through that increase in difficulty, with more cards on the grid, faster card flipping times etc.  A login area for users to store their results, and record their scores and progress.
 
-close modals by clicking outside the box
+Add in the ability to close the modal pop ups by clicking outside the box to offer an alternative method of closing it.  
 
-
+<br>
 <br>
 
 # Technologies
@@ -403,7 +403,17 @@ It also suggested that there were some long functions in there, I did not change
 
 # Bugs
 
-I have been testing throughout the build using Google dev tools and fixing problems as they arised.  Images not resizing properly in the grid.  perspective fundtion in 3d causing glitch where parts of other cards being shown when a card is clicked.  counter not resetting.  
+I have been testing throughout the build using Google dev tools and fixing problems as they arose.  
+
+One of the bugs was that the images were not resizing properly in the grid and they overflowing out of the card container.  This was corrected by setting the card container size and then setting the image size to 100%.  
+
+One big bug that I encountered was concerning the perspective function linked to the preserve-3d styling.  When you clicked on a card part of the other neighbouring cards were revealed.  I checked the grid container measurements in dev tools, the layout, card sized, and then realised that the flip function may be to blame. After removing the perspective and then re-adding it, it became clear that this was the problem, I removed it as it didnt impact to much the way the cards looked as they flipped. counter not resetting.   
+
+I could not get the if statement that was used to check if the cardsPicked was equal 16 then pop up activated. In the end I created a new variable called cardsMatched and then called it in the if statement.  If the cards picked were equal to two then the cardsMatched increased by one.  Then I created an if statement to check if the cardsMatched were equal to 16 it triggered the win message.
+
+This last thing isnt a bug of sorts as I haven't created the code yet.  But I realised towards the end of the project that the user is able to click on the other cards before their chosen two cards have flipped back over.  I would like to build a function that removes the pointer events on the cards are temporarily deactivated whilst the check match function is running and the cards are being flipped back.
+
+
 
 <br>
 <br>
@@ -481,10 +491,10 @@ Colour palette generator - coolors - (https://coolors.co/22292f-035746-caa59b-fc
 ## Images
 
 The Bird images for the card faces were taken from this free download on freepik by macrovector. - 
- "https://www.freepik.com/free-vector/exotic-birds-set_3817867.htm#query=jungle%20birds&position=9&from_view=search&track=ais"
+ https://www.freepik.com/free-vector/exotic-birds-set_3817867.htm#query=jungle%20birds&position=9&from_view=search&track=ais
 
 
-The background was made up from part of a tropical background image by BiZkettE1 which I downloaded from freepik.  The file was a psd file with layers so I was able to change the image around, delete and resize some of the features to suit what I wanted. - "https://www.freepik.com/free-psd/colorful-summer-nights-poster-template-with-toucan_4793703.htm#page=2&position=11&from_view=author"
+The background was made up from part of a tropical background image by BiZkettE1 which I downloaded from freepik.  The file was a psd file with layers so I was able to change the image around, delete and resize some of the features to suit what I wanted. - https://www.freepik.com/free-psd/colorful-summer-nights-poster-template-with-toucan_4793703.htm#page=2&position=11&from_view=author
 
 The blue gradient background card image was created by myself in photoshop.
 
