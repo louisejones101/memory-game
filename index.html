@@ -14,8 +14,8 @@
 </head>
 <body class ="bg-image">
     <div class = "title"> 
-        <h1>Tropical Birds Memory Game</h1>
-        <p>Match the birds with their identical twins to win!</p>
+        <h1>Tropical Birds</h1>
+        <p>Match the birds to win!</p>
     </div> 
     <div class = "gameContainer">
         <div>
@@ -44,24 +44,24 @@
                 <li>The game is won when you have found all 8 pairs of cards</li>
             </ul>
             <br>
-            <p>Good Luck!</p>
-            <br>
+            <p id="goodLuck">Good Luck!</p>
             <div class ="rulesButton">
                 <button class = "closeBtn" id = "startBtn">Start Game</button>
             </div>
         </div>
     </div>
     <div class="modal" id="winModal">
-        <div class="modalContent">
+        <div class="modalContent" id="winContent">
             <h3>CONGRATULATIONS!</h3>
             <br>
-            <p>You found all the pairs of birds in </p><span class ="moves">0</span>
+            <p>You found all the pairs of birds</p>
             <br>
             <div class ="playAgain">
                 <button class = "closeBtn" id = "playAgainBtn">Play Again</button>
             </div>
         </div>
     </div>
+
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>

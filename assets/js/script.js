@@ -4,7 +4,8 @@
 const gameGrid = document.querySelector('.gameGrid'); 
 const movesElem = document.querySelector('.moves'); 
 var modalOne = document.getElementById('rulesModal');
-const modalTwo = document.getElementById('winModal')  
+const modalTwo = document.getElementById('winModal')
+const modalBackground = document.getElementById('modalOverlay');
 const rulesButton = document.getElementById('rulesBtn');
 const closeButton = document.getElementById('startBtn');
 const playAgainButton = document.getElementById('playAgainBtn');
@@ -98,13 +99,13 @@ closeButton.onclick = function() {  // function to close rules modal
 
 function winModalMessage () {   // winModal function
     modalTwo.style.display = 'block'; 
-    resetGame();  //call resetGame function
+    resetGame();  //call resetGame function 
 }
 
 playAgainButton.addEventListener('click', playAgainButton); // event listener for when the start game button is clicked
 playAgainButton.onclick = function() {  // function to close rules modal
     modalTwo.style.display = 'none';
-    resetCounter();
+    resetCounter(); 
 }
 
 // reset Game event listener and reset button function to call reset game function
