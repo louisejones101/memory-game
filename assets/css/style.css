@@ -11,10 +11,9 @@ body {
 
 .bg-image {
     background-image: url("../images/CardGameBackgroundweb.jpg"); 
-    background-position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    
 }
 
 .title {
