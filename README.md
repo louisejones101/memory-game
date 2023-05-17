@@ -243,7 +243,9 @@ In order to test the accessibility of the site I ran the pages through [Wave](ht
 
 Below shows the some of the things it flagged during the test.  As you can see from the first screenshot below Wave flagged that the images used for the cards didn't have alt tags, the gameGrid was generated in JS using and array for the data but for some reason wave doesnt seem to pick them up.  I did not change anything.  
 
-Bwlow is the screenshot showing the results with the img alt tags missing.
+It also highlighted that I used a <p> tag for the text under the H1 that could have been better suited to a H2 tag.  I was unable to go back in to change this before the submission deadline.
+
+Below is the screenshot showing the results with the img alt tags missing.
 
 <br>
 
