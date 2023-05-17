@@ -356,3 +356,31 @@ h2 {
     }
 }
 
+@media screen and (max-width: 320px) {
+    
+    .title {
+        font-size: 0.6rem;
+        padding-right: 2%;
+    }
+    
+    .title p {
+        font-size: 0.6rem;
+        padding-right: 0;
+    }
+    .gameContainer {
+        width: 16rem;
+    }
+    
+    .gameGrid {
+        grid-template-columns: repeat(4, 3rem);
+        grid-template-rows: repeat(4, 3rem);
+        grid-gap: 0.8rem; 
+        padding-left: 1.3%;
+    }  
+    
+    #winContent {
+        font-size: 1.5rem;
+    }
+}
+
+
