@@ -130,7 +130,7 @@ playAgainButton.onclick = function() {  // function to close rules modal
 resetButton.addEventListener('click', resetGameBtn);  // event listener for when the reset button is clicked
 resetButton.onclick = function() {   // function to reset game 
 resetGame(); // call the resetGame function
-resetCounter();
+resetCounter(); //reset the counter
 };
 
 
@@ -139,12 +139,12 @@ resetCounter();
 function movesCounter() {  
     counter++;  // if the cardspicked length = 2 add one move to the counter and update on page
     movesElem.innerHTML = counter;  // show the increasing counter number in the HTML 
-};
+}
 
 function resetCounter(){  
     counter = 0;  //reset the counter to 0
     movesElem.innerHTML = counter;  // show the new reset counter in the HTML
-};
+}
 
 
 // Function to randomly sort the cards
