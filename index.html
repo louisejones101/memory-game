@@ -18,18 +18,20 @@
         <h1>Tropical Birds</h1>
         <p>Match the birds to win!</p>
     </div> 
-    <div class = "gameContainer">
+    <div class = "gameContainer"> <!-- container to hold the game grid-->
         <div>
-            <h2>Moves: <span class = 'moves'>0</span></h2>
+            <h2>Moves: <span class = 'moves'>0</span></h2> <!-- the span that hold the moves counter-->
         </div>
         <br>
-        <div class = "gameGrid"></div>
+        <div class = "gameGrid"></div> <!-- The game grid where the JS code will build the grid-->
     </div>
     <br>
+    <!-- game buttons below gameGrid-->
     <div class="gameButtons" >
         <button class="rulesBtn" id="rulesBtn">Rules</button>
         <button class="resetGame" id="resetGameBtn">Reset</button>
     </div>
+    <!-- Rules Modal Pop up-->
     <div class="modal" id="rulesModal">
         <div class="modalContent">
             <h3>Rules of the Game</h3>
@@ -51,6 +53,7 @@
             </div>
         </div>
     </div>
+    <!-- Win modal pop up-->
     <div class="modal" id="winModal">
         <div class="modalContent" id="winContent">
             <h3>CONGRATULATIONS!</h3>
@@ -58,11 +61,11 @@
             <p>You found all the pairs of birds</p>
             <br>
             <div class ="playAgain">
-                <button class = "closeBtn" id = "playAgainBtn">Play Again</button>
+            <button class = "closeBtn" id = "playAgainBtn">Play Again</button>
             </div>
         </div>
     </div>
-
+    <!-- link to call the JS file -->
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>
